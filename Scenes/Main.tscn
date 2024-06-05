@@ -33,6 +33,9 @@ position = Vector2(3248, 496)
 [node name="Road13" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(4040, 496)
 
+[node name="TreeType26" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1080, -512)
+
 [node name="TreeType15" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(480, -512)
 
@@ -47,9 +50,6 @@ position = Vector2(880, -584)
 
 [node name="TreeType25" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(1072, -376)
-
-[node name="TreeType26" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(1136, -544)
 
 [node name="TreeType27" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(1080, -728)
