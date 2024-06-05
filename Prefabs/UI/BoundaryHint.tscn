@@ -1,0 +1,51 @@
+[gd_scene load_steps=6 format=3 uid="uid://duiiqyqvey730"]
+
+[ext_resource type="Texture2D" uid="uid://dspffmljt82a7" path="res://Art/boundary.svg" id="1_4mhe8"]
+[ext_resource type="Script" path="res://Scripts/UI/BoundaryHint.gd" id="2_mh5hy"]
+
+[sub_resource type="Animation" id="Animation_jaqr4"]
+resource_name = "animate"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0xoqu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bmgdr"]
+_data = {
+"RESET": SubResource("Animation_0xoqu"),
+"animate": SubResource("Animation_jaqr4")
+}
+
+[node name="BoundaryHint" type="TextureRect"]
+offset_right = 1920.0
+offset_bottom = 40.0
+texture = ExtResource("1_4mhe8")
+script = ExtResource("2_mh5hy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_bmgdr")
+}

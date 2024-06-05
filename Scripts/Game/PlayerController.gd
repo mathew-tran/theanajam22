@@ -5,12 +5,14 @@ var VerticalSpeed = 200
 
 var VerticalRestraints = {
 	"MIN" : -3000,
+	#"MIN" : -10,
 	"MAX" : 500
 }
 
 var HorizontalRestraints = {
 	"MIN" : 0,
 	"MAX" : 3000
+	#"MAX" : 100
 }
 
 func _process(delta):
@@ -18,16 +20,20 @@ func _process(delta):
 		global_position.x -= HorizontalSpeed * delta
 		if global_position.x <= HorizontalRestraints["MIN"]:
 			global_position.x = HorizontalRestraints["MIN"]
+			EventManager.PlayerHitLeftBoundary.emit()
 	if Input.is_action_pressed("move_right"):
 		global_position.x += HorizontalSpeed * delta
 		if global_position.x > HorizontalRestraints["MAX"]:
 			global_position.x = HorizontalRestraints["MAX"]
+			EventManager.PlayerHitRightBoundary.emit()
 
 	if Input.is_action_pressed("move_up"):
 		global_position.y -= VerticalSpeed * delta
 		if global_position.y <= VerticalRestraints["MIN"]:
 			global_position.y = VerticalRestraints["MIN"]
+			EventManager.PlayerHitTopBoundary.emit()
 	if Input.is_action_pressed("move_down"):
 		global_position.y += VerticalSpeed * delta
 		if global_position.y > VerticalRestraints["MAX"]:
 			global_position.y = VerticalRestraints["MAX"]
+			EventManager.PlayerHitBottomBoundary.emit()

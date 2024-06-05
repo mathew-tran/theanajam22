@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://b82bxvwiipqyk"]
+[gd_scene load_steps=9 format=3 uid="uid://b82bxvwiipqyk"]
 
 [ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_aif20"]
 [ext_resource type="Texture2D" uid="uid://dwpyojfn0u62a" path="res://Art/DetFloatsworth.svg" id="1_jqmt1"]
 [ext_resource type="Texture2D" uid="uid://b11aibjq7m7tt" path="res://Art/SpeechBubblePointed.svg" id="3_kun2f"]
 [ext_resource type="Texture2D" uid="uid://y5exiahcqx3d" path="res://Art/TextPip.svg" id="4_p8xya"]
+[ext_resource type="PackedScene" uid="uid://duiiqyqvey730" path="res://Prefabs/UI/BoundaryHint.tscn" id="5_p065d"]
 
 [sub_resource type="Animation" id="Animation_jq8ty"]
 resource_name = "animate"
@@ -12,7 +13,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/path = NodePath("Control/Sprite2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -27,7 +28,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/path = NodePath("Control/Sprite2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -47,21 +48,35 @@ _data = {
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1920.0
-offset_bottom = 500.0
+offset_bottom = 1080.0
 script = ExtResource("1_aif20")
 
-[node name="Sprite2D" type="TextureRect" parent="."]
+[node name="Control" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -400.0
+offset_right = 960.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Sprite2D" type="TextureRect" parent="Control"]
 layout_mode = 0
 offset_right = 305.0
 offset_bottom = 504.0
 texture = ExtResource("1_jqmt1")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control"]
+root_node = NodePath("../..")
 libraries = {
 "": SubResource("AnimationLibrary_28h4g")
 }
 
-[node name="Speech Bubble" type="TextureRect" parent="."]
+[node name="Speech Bubble" type="TextureRect" parent="Control"]
 layout_mode = 0
 offset_left = 260.0
 offset_top = 107.0
@@ -69,7 +84,7 @@ offset_right = 1164.0
 offset_bottom = 335.0
 texture = ExtResource("3_kun2f")
 
-[node name="Label" type="Label" parent="Speech Bubble"]
+[node name="Label" type="Label" parent="Control/Speech Bubble"]
 layout_mode = 0
 offset_left = 140.0
 offset_top = 39.0
@@ -79,10 +94,51 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Let's look for a Balloon. He should have stripes."
 
-[node name="TextureRect" type="TextureRect" parent="Speech Bubble"]
+[node name="TextPip" type="TextureRect" parent="Control/Speech Bubble"]
 layout_mode = 0
 offset_left = 833.0
 offset_top = 168.0
 offset_right = 873.0
 offset_bottom = 208.0
 texture = ExtResource("4_p8xya")
+
+[node name="TopBoundaryHint" parent="." instance=ExtResource("5_p065d")]
+layout_mode = 0
+
+[node name="BottomBoundaryHint" parent="." instance=ExtResource("5_p065d")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -40.0
+offset_right = 960.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="LeftBoundaryHint" parent="." instance=ExtResource("5_p065d")]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -540.0
+offset_right = 1960.0
+offset_bottom = -500.0
+grow_vertical = 2
+rotation = 1.5708
+
+[node name="RightBoundaryHint" parent="." instance=ExtResource("5_p065d")]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 1920.0
+offset_top = -540.0
+offset_right = 3840.0
+offset_bottom = -500.0
+grow_vertical = 2
+rotation = 1.5708

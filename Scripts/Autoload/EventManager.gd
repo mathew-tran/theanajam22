@@ -1,0 +1,6 @@
+extends Node
+
+signal PlayerHitLeftBoundary
+signal PlayerHitRightBoundary
+signal PlayerHitTopBoundary
+signal PlayerHitBottomBoundary
