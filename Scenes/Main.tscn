@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=11 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -7,6 +7,9 @@
 [ext_resource type="Script" path="res://Scripts/Game/PlayerController.gd" id="4_nh21q"]
 [ext_resource type="PackedScene" uid="uid://db414rn1kbw8" path="res://Prefabs/Environment/FenceType1.tscn" id="4_rypjo"]
 [ext_resource type="PackedScene" uid="uid://c5hdyt5q8cmlt" path="res://Prefabs/Environment/DonutShop.tscn" id="5_bi2js"]
+[ext_resource type="PackedScene" uid="uid://b1085mflhxfsi" path="res://Prefabs/Environment/WaterFountain.tscn" id="6_hkplv"]
+[ext_resource type="PackedScene" uid="uid://d4g3cq8c2rcr1" path="res://Prefabs/Environment/Hospital.tscn" id="7_gx38b"]
+[ext_resource type="PackedScene" uid="uid://c78k24a6kwvpn" path="res://Prefabs/Environment/ClockTower.tscn" id="8_y5hxk"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -43,6 +46,17 @@ position = Vector2(793.5, 164.5)
 position = Vector2(1232, 148)
 rotation = -1.57079
 
+[node name="Road7" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(1232, -645)
+rotation = -1.57079
+
+[node name="Road8" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(1232, -1438)
+rotation = -1.57079
+
+[node name="Road9" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(792, -1790)
+
 [node name="HouseType4" parent="Environment" instance=ExtResource("2_u734m")]
 position = Vector2(808.5, 17.5)
 
@@ -72,6 +86,14 @@ position = Vector2(1728, -232)
 
 [node name="DonutShop" parent="Environment" instance=ExtResource("5_bi2js")]
 position = Vector2(1056, 56)
+
+[node name="WaterFountain" parent="Environment" instance=ExtResource("6_hkplv")]
+position = Vector2(2176, 176)
+
+[node name="Hospital" parent="Environment" instance=ExtResource("7_gx38b")]
+
+[node name="ClockTower" parent="Environment" instance=ExtResource("8_y5hxk")]
+position = Vector2(2192, -408)
 
 [node name="Player" type="Camera2D" parent="."]
 visible = false

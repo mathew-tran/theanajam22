@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4g3cq8c2rcr1"]
+
+[ext_resource type="Texture2D" uid="uid://bscikios8j66q" path="res://Art/Hospital.svg" id="1_qarpg"]
+
+[node name="Hospital" type="Sprite2D"]
+position = Vector2(664, -1970)
+texture = ExtResource("1_qarpg")

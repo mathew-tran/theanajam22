@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c78k24a6kwvpn"]
+
+[ext_resource type="Texture2D" uid="uid://dve6yxis71df2" path="res://Art/Clocktower.svg" id="1_2a53i"]
+
+[node name="ClockTower" type="Sprite2D"]
+texture = ExtResource("1_2a53i")

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="59.226559mm"
+   height="69.663383mm"
+   viewBox="0 0 59.226559 69.663383"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Hospital.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.71891835"
+     inkscape:cx="-80.676756"
+     inkscape:cy="216.29716"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="1699"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-141.81667,-89.164577)">
+    <g
+       id="g83"
+       transform="matrix(0.5364291,0,0,0.5364291,233.61783,13.946848)">
+      <rect
+         style="fill:#ffffff;stroke:#ffffff;stroke-width:2;stroke-linecap:square;stroke-linejoin:round"
+         id="rect74"
+         width="92.123657"
+         height="120.22918"
+         x="-162.38747"
+         y="148.85518"
+         ry="5.5204463" />
+      <circle
+         style="fill:#ffffff;stroke:#666666;stroke-width:2;stroke-linecap:square;stroke-linejoin:round"
+         id="path74"
+         cx="-117.62682"
+         cy="183.20638"
+         r="28.625996" />
+      <circle
+         style="fill:#dc0000;stroke:#666666;stroke-width:1.70134;stroke-linecap:square;stroke-linejoin:round"
+         id="circle74"
+         cx="-117.62682"
+         cy="183.20638"
+         r="24.351307" />
+      <path
+         id="rect75"
+         style="fill:#ffffff;stroke:#0e232e;stroke-width:1.26773;stroke-linecap:square;stroke-linejoin:round"
+         d="m -117.50756,162.89135 c -1.09661,0 -1.97972,0.88259 -1.97972,1.97921 v 15.83572 h -17.81493 v 3.95893 h 17.81493 v 15.83573 c 0,1.09662 0.88311,1.97972 1.97972,1.97972 1.09662,0 1.97921,-0.8831 1.97921,-1.97972 v -15.83573 h 17.814934 v -3.95893 h -17.814934 v -15.83572 c 0,-1.09662 -0.88259,-1.97921 -1.97921,-1.97921 z" />
+      <g
+         id="g82"
+         transform="translate(-4.2375374)">
+        <rect
+           style="fill:#19aeff;stroke:#0e232e;stroke-width:1.09997;stroke-linecap:square;stroke-linejoin:round"
+           id="rect76"
+           width="22.981806"
+           height="36.966934"
+           x="-135.14888"
+           y="231.04068"
+           ry="3.8507228" />
+        <g
+           id="g81">
+          <rect
+             style="fill:#19aeff;stroke:#0e232e;stroke-width:1.09997;stroke-linecap:square;stroke-linejoin:round"
+             id="rect77"
+             width="22.981806"
+             height="36.966934"
+             x="-135.14888"
+             y="231.04068"
+             ry="3.8507228" />
+        </g>
+        <rect
+           style="fill:#364e59;stroke:#0e232e;stroke-width:2;stroke-linecap:square;stroke-linejoin:round"
+           id="rect78"
+           width="23.161034"
+           height="3.1228359"
+           x="-135.31419"
+           y="249.07222"
+           ry="1.5614179" />
+        <g
+           id="g80">
+          <rect
+             style="fill:#19aeff;stroke:#0e232e;stroke-width:1.09997;stroke-linecap:square;stroke-linejoin:round"
+             id="rect79"
+             width="22.981806"
+             height="36.966934"
+             x="-111.85773"
+             y="231.04068"
+             ry="3.8507228" />
+          <rect
+             style="fill:#364e59;stroke:#0e232e;stroke-width:2;stroke-linecap:square;stroke-linejoin:round"
+             id="rect80"
+             width="23.161034"
+             height="3.1228359"
+             x="-112.02304"
+             y="249.07222"
+             ry="1.5614179" />
+        </g>
+      </g>
+      <rect
+         style="fill:#005c94;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round"
+         id="rect82"
+         width="110.40892"
+         height="11.040892"
+         x="-171.13382"
+         y="140.21933"
+         ry="1.5614179" />
+    </g>
+  </g>
+</svg>

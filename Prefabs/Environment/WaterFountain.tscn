@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1085mflhxfsi"]
+
+[ext_resource type="Texture2D" uid="uid://2yoads2j2x4b" path="res://Art/WaterFountain.svg" id="1_3llp6"]
+
+[node name="WaterFountain" type="Sprite2D"]
+texture = ExtResource("1_3llp6")
