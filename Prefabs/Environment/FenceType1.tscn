@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://db414rn1kbw8"]
+
+[ext_resource type="Texture2D" uid="uid://dq1cdluth0k2a" path="res://Art/Fence1.svg" id="1_e57x6"]
+
+[node name="FenceType1" type="Sprite2D"]
+texture = ExtResource("1_e57x6")

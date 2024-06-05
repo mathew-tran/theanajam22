@@ -1,7 +1,7 @@
 extends Camera2D
 
-var HorizontalSpeed = 200
-var VerticalSpeed = 200
+var HorizontalSpeed = 400
+var VerticalSpeed = 400
 
 var VerticalRestraints = {
 	"MIN" : -3000,
@@ -14,6 +14,11 @@ var HorizontalRestraints = {
 	"MAX" : 3000
 	#"MAX" : 100
 }
+
+var MinScrollAmount = .8
+var MaxScrollAmount = 2.6
+var ScrollSpeed = 10
+
 
 func _process(delta):
 	if Input.is_action_pressed("move_left"):
@@ -37,3 +42,12 @@ func _process(delta):
 		if global_position.y > VerticalRestraints["MAX"]:
 			global_position.y = VerticalRestraints["MAX"]
 			EventManager.PlayerHitBottomBoundary.emit()
+
+	if Input.is_action_just_pressed("scroll_up"):
+		zoom += Vector2(1,1) * ScrollSpeed * delta
+		if zoom.x > MaxScrollAmount:
+			zoom = Vector2(MaxScrollAmount, MaxScrollAmount)
+	if Input.is_action_just_pressed("scroll_down"):
+		zoom -= Vector2(1,1) * ScrollSpeed * delta
+		if zoom.x < MinScrollAmount:
+			zoom = Vector2(MinScrollAmount, MinScrollAmount)

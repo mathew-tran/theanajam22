@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5hdyt5q8cmlt"]
+
+[ext_resource type="Texture2D" uid="uid://b5i5us0n8f2bq" path="res://Art/DonutShop.svg" id="1_pnnvy"]
+
+[node name="DonutShop" type="Sprite2D"]
+texture = ExtResource("1_pnnvy")

@@ -1,6 +1,7 @@
 extends Control
 
 func _ready():
+	visible = true
 	$Control/AnimationPlayer.play("animate")
 	EventManager.connect("PlayerHitTopBoundary", Callable(self, "OnPlayerHitTopBoundary"))
 	EventManager.connect("PlayerHitBottomBoundary", Callable(self, "OnPlayerHitBottomBoundary"))
