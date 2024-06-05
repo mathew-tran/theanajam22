@@ -1,12 +1,44 @@
-[gd_scene load_steps=2 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=6 format=3 uid="uid://bgysluonl54m7"]
 
+[ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
+[ext_resource type="PackedScene" uid="uid://bvy7aud5igsos" path="res://Prefabs/Environment/HouseType_1.tscn" id="2_u734m"]
+[ext_resource type="PackedScene" uid="uid://r0tnq037xl5" path="res://Prefabs/Environment/TreeType_1.tscn" id="3_u3w0x"]
+[ext_resource type="Script" path="res://Scripts/Game/PlayerController.gd" id="4_nh21q"]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Environment" type="Node2D" parent="."]
 
-[node name="PlayerUI" parent="Camera2D" instance=ExtResource("1_tryda")]
+[node name="Road" parent="Environment" instance=ExtResource("1_d763k")]
+
+[node name="Road2" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(224, 499)
+
+[node name="Road3" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(1016, 499)
+
+[node name="HouseType1" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(808, 352)
+
+[node name="HouseType2" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(656, 352)
+
+[node name="HouseType3" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(496, 352)
+
+[node name="TreeType1" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(344, 368)
+
+[node name="TreeType2" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(264, 368)
+
+[node name="Player" type="Camera2D" parent="."]
+position = Vector2(0, 376)
+position_smoothing_enabled = true
+script = ExtResource("4_nh21q")
+
+[node name="PlayerUI" parent="Player" instance=ExtResource("1_tryda")]
 offset_left = -948.0
 offset_top = 164.0
 offset_right = -948.0

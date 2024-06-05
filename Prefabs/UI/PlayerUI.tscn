@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://b82bxvwiipqyk"]
+[gd_scene load_steps=8 format=3 uid="uid://b82bxvwiipqyk"]
 
 [ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_aif20"]
 [ext_resource type="Texture2D" uid="uid://dwpyojfn0u62a" path="res://Art/DetFloatsworth.svg" id="1_jqmt1"]
 [ext_resource type="Texture2D" uid="uid://b11aibjq7m7tt" path="res://Art/SpeechBubblePointed.svg" id="3_kun2f"]
+[ext_resource type="Texture2D" uid="uid://y5exiahcqx3d" path="res://Art/TextPip.svg" id="4_p8xya"]
 
 [sub_resource type="Animation" id="Animation_jq8ty"]
 resource_name = "animate"
@@ -65,3 +66,21 @@ offset_top = 107.0
 offset_right = 1164.0
 offset_bottom = 335.0
 texture = ExtResource("3_kun2f")
+
+[node name="Label" type="Label" parent="Speech Bubble"]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 39.0
+offset_right = 821.0
+offset_bottom = 189.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Let's look for a Balloon. He should have stripes."
+
+[node name="TextureRect" type="TextureRect" parent="Speech Bubble"]
+layout_mode = 0
+offset_left = 833.0
+offset_top = 168.0
+offset_right = 873.0
+offset_bottom = 208.0
+texture = ExtResource("4_p8xya")

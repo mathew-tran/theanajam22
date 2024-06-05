@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbwx0d7qscbco"]
+
+[ext_resource type="Texture2D" uid="uid://cl7ggihuptck0" path="res://Art/Street.svg" id="1_80sbf"]
+
+[node name="Road" type="Sprite2D"]
+position = Vector2(-567, 499)
+texture = ExtResource("1_80sbf")
