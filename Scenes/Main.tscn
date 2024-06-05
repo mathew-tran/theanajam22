@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgysluonl54m7"]
+
+[ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="PlayerUI" parent="Camera2D" instance=ExtResource("1_tryda")]
+offset_left = -948.0
+offset_top = 164.0
+offset_right = -948.0
+offset_bottom = 164.0
