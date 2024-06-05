@@ -6,6 +6,21 @@
 [ext_resource type="Texture2D" uid="uid://y5exiahcqx3d" path="res://Art/TextPip.svg" id="4_p8xya"]
 [ext_resource type="PackedScene" uid="uid://duiiqyqvey730" path="res://Prefabs/UI/BoundaryHint.tscn" id="5_p065d"]
 
+[sub_resource type="Animation" id="Animation_wytmw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
 [sub_resource type="Animation" id="Animation_jq8ty"]
 resource_name = "animate"
 length = 2.0
@@ -21,21 +36,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(0, 30), Vector2(0, 0), Vector2(0, -30), Vector2(0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_wytmw"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Control/Sprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_28h4g"]

@@ -21,20 +21,116 @@ position = Vector2(0, 499)
 [node name="Road3" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(793, 499)
 
+[node name="Road10" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(1673, 499)
+
+[node name="Road11" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(2456, 496)
+
+[node name="Road12" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(3248, 496)
+
+[node name="Road13" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(4040, 496)
+
+[node name="TreeType15" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(480, -512)
+
+[node name="TreeType22" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(584, -576)
+
+[node name="TreeType23" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(728, -488)
+
+[node name="TreeType24" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(880, -584)
+
+[node name="TreeType25" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1072, -376)
+
+[node name="TreeType26" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1136, -544)
+
+[node name="TreeType27" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1080, -728)
+
 [node name="HouseType1" parent="Environment" instance=ExtResource("2_u734m")]
-position = Vector2(808, 352)
+position = Vector2(795, -766.5)
+
+[node name="HouseType7" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(931, -766.5)
 
 [node name="HouseType2" parent="Environment" instance=ExtResource("2_u734m")]
-position = Vector2(656, 352)
+position = Vector2(643, -766.5)
 
 [node name="HouseType3" parent="Environment" instance=ExtResource("2_u734m")]
-position = Vector2(496, 352)
+position = Vector2(483, -766.5)
+
+[node name="HouseType8" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(803, -374.5)
+
+[node name="HouseType9" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(939, -374.5)
+
+[node name="HouseType10" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(651, -374.5)
+
+[node name="HouseType11" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(491, -374.5)
+
+[node name="TreeType12" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1472, 32)
+
+[node name="TreeType11" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1552, 104)
 
 [node name="TreeType1" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(344, 368)
 
+[node name="TreeType5" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1368, -24)
+
+[node name="TreeType10" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1616, 216)
+
+[node name="TreeType6" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1352, 104)
+
+[node name="TreeType7" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1392, 240)
+
+[node name="TreeType8" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1488, 176)
+
+[node name="TreeType9" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1520, 304)
+
 [node name="TreeType2" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(264, 368)
+
+[node name="TreeType13" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2648, 80)
+
+[node name="TreeType14" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2784, 128)
+
+[node name="TreeType16" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2528, 48)
+
+[node name="TreeType17" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2707.5, 207)
+
+[node name="TreeType18" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2424, 120)
+
+[node name="TreeType19" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2483.5, 231)
+
+[node name="TreeType20" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2579.5, 167)
+
+[node name="TreeType21" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2611.5, 295)
 
 [node name="Road4" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(0.5, 164.5)
@@ -48,6 +144,16 @@ rotation = -1.57079
 
 [node name="Road7" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(1232, -645)
+rotation = -1.57079
+
+[node name="Road14" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(792, -920)
+
+[node name="Road15" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(792, -216)
+
+[node name="Road16" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(352, -568)
 rotation = -1.57079
 
 [node name="Road8" parent="Environment" instance=ExtResource("1_d763k")]
@@ -99,7 +205,6 @@ position = Vector2(2192, -408)
 visible = false
 position = Vector2(0, 376)
 position_smoothing_enabled = true
-position_smoothing_speed = 30.0
 script = ExtResource("4_nh21q")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
