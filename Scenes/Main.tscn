@@ -10,13 +10,11 @@
 
 [node name="Environment" type="Node2D" parent="."]
 
-[node name="Road" parent="Environment" instance=ExtResource("1_d763k")]
-
 [node name="Road2" parent="Environment" instance=ExtResource("1_d763k")]
-position = Vector2(224, 499)
+position = Vector2(0, 499)
 
 [node name="Road3" parent="Environment" instance=ExtResource("1_d763k")]
-position = Vector2(1016, 499)
+position = Vector2(793, 499)
 
 [node name="HouseType1" parent="Environment" instance=ExtResource("2_u734m")]
 position = Vector2(808, 352)
@@ -33,13 +31,48 @@ position = Vector2(344, 368)
 [node name="TreeType2" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(264, 368)
 
+[node name="Road4" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(0.5, 164.5)
+
+[node name="Road5" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(793.5, 164.5)
+
+[node name="Road6" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(1232, 148)
+rotation = -1.57079
+
+[node name="HouseType4" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(808.5, 17.5)
+
+[node name="HouseType5" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(656.5, 17.5)
+
+[node name="HouseType6" parent="Environment" instance=ExtResource("2_u734m")]
+position = Vector2(496.5, 17.5)
+
+[node name="TreeType3" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(344.5, 33.5)
+
+[node name="TreeType4" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(264.5, 33.5)
+
 [node name="Player" type="Camera2D" parent="."]
+visible = false
 position = Vector2(0, 376)
 position_smoothing_enabled = true
 script = ExtResource("4_nh21q")
 
-[node name="PlayerUI" parent="Player" instance=ExtResource("1_tryda")]
-offset_left = -948.0
-offset_top = 164.0
-offset_right = -948.0
-offset_bottom = 164.0
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PlayerUI" parent="CanvasLayer" instance=ExtResource("1_tryda")]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -500.0
+offset_right = 960.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 0

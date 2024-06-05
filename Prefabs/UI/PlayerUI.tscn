@@ -46,6 +46,8 @@ _data = {
 [node name="PlayerUI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 500.0
 script = ExtResource("1_aif20")
 
 [node name="Sprite2D" type="TextureRect" parent="."]
