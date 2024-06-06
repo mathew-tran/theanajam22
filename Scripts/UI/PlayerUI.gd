@@ -6,6 +6,8 @@ extends Control
 @onready var ObjectivePanel = $Objective
 @onready var ObjectiveLabel = $Objective/Label
 
+@onready var FloatsWorthSprite = $Control/Sprite2D
+
 var CurrentContent = []
 var CurrentContentIndex = 0
 func _ready():
@@ -17,6 +19,7 @@ func _ready():
 	EventManager.connect("PlayerHitRightBoundary", Callable(self, "OnPlayerHitRightBoundary"))
 	EventManager.connect("InjectDetDialogue", Callable(self, "OnInjectDetDialogue"))
 	EventManager.connect("InjectObjective", Callable(self, "OnInjectObjective"))
+	EventManager.connect("InjectDetEmote", Callable(self, "OnInjectDetEmote"))
 	ClearText()
 	ClearObjective()
 
@@ -65,6 +68,16 @@ func OnInjectDetDialogue(content):
 
 func OnInjectObjective(content):
 	SetObjectiveLabel(content)
+
+func OnInjectDetEmote(emote : EventManager.EMOTE):
+	if emote == EventManager.EMOTE.ANGRY:
+		FloatsWorthSprite.texture = load("res://Art/DetFloatsworthAngry.svg")
+	elif emote == EventManager.EMOTE.NEUTRAL:
+		FloatsWorthSprite.texture = load("res://Art/DetFloatsworth.svg")
+	elif emote == EventManager.EMOTE.BLUSH:
+		FloatsWorthSprite.texture = load("res://Art/DetFloatsworthBlush.svg")
+	elif emote == EventManager.EMOTE.SAD:
+		FloatsWorthSprite.texture = load("res://Art/DetFloatsworthSad.svg")
 
 func SplitString(s: String):
 	var result = []

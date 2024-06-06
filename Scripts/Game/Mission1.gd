@@ -8,7 +8,11 @@ func ActivateMission():
 	var content2 = "Great. I knew you would!\nCould you go to my office near the clock tower. I have left a case file on the ground!"
 	EventManager.InjectDetDialogue.emit(content2)
 
+	EventManager.InjectDetEmote.emit(EventManager.EMOTE.ANGRY)
+
 	await EventManager.InjectDetDialogueComplete
+
+	EventManager.InjectDetEmote.emit(EventManager.EMOTE.NEUTRAL)
 	EventManager.InjectObjective.emit("Get case file from Detective Floatsworth's house near the Clock Tower")
 
 func DeactivateMission():
