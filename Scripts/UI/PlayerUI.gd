@@ -90,8 +90,10 @@ func SetObjectiveLabel(content):
 	var tween = get_tree().create_tween()
 	ObjectivePanel.modulate = Color(1,1,1,0)
 	ObjectivePanel.position.y = -100
+	ObjectivePanel.scale = Vector2(.1,.1)
 	tween.tween_property(ObjectivePanel, "modulate", Color.WHITE, .2)
-	tween.tween_property(ObjectivePanel, "position:y", 88, .2)
+	tween.tween_property(ObjectivePanel, "position:y", 88, .1)
+	tween.tween_property(ObjectivePanel, "scale", Vector2.ONE, .2)
 	ObjectivePanel.visible = true
 	ObjectiveLabel.text = content
 
