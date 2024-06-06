@@ -21,3 +21,18 @@ signal InjectDetEmote(emote : EMOTE)
 
 signal Mission1EnableCase
 signal MissionCasePickup
+
+var bIsInDialogue = false
+
+var ClickTimer : Timer
+
+func _ready():
+	ClickTimer = Timer.new()
+	ClickTimer.one_shot = true
+	add_child(ClickTimer)
+
+func CanClickObject():
+	return ClickTimer.time_left == 0.0
+
+func StartClickTimer():
+	ClickTimer.start()

@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://c78k24a6kwvpn"]
+[gd_scene load_steps=4 format=3 uid="uid://c78k24a6kwvpn"]
 
 [ext_resource type="Texture2D" uid="uid://dve6yxis71df2" path="res://Art/Clocktower.svg" id="1_2a53i"]
+[ext_resource type="Script" path="res://Scripts/Game/ClickableObject.gd" id="2_pb8md"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1dxq"]
+size = Vector2(336, 608)
 
 [node name="ClockTower" type="Sprite2D"]
 texture = ExtResource("1_2a53i")
+script = ExtResource("2_pb8md")
+DefaultContent = "The Clock Tower.. It just got built a couple years ago. 
+But it suddenly broke! No one has fixed it since!"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_e1dxq")

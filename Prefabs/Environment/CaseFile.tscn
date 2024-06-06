@@ -17,5 +17,3 @@ script = ExtResource("2_1mwxg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_xoalb")
-
-[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

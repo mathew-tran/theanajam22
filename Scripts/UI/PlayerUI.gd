@@ -47,6 +47,7 @@ func _input(event):
 				ClearText()
 				CurrentContent = []
 				EventManager.InjectDetDialogueComplete.emit()
+				EventManager.bIsInDialogue = false
 func SetText():
 	SpeechLabel.text = CurrentContent[CurrentContentIndex]
 
@@ -62,6 +63,7 @@ func ClearObjective():
 	ObjectivePanel.visible = false
 
 func OnInjectDetDialogue(content):
+	EventManager.bIsInDialogue = true
 	CurrentContent = SplitString(content)
 	CurrentContentIndex = 0
 	SetText()
