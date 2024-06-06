@@ -21,6 +21,9 @@ var ScrollSpeed = 10
 
 
 func _process(delta):
+	if EventManager.bIsInDialogue:
+		return
+
 	if Input.is_action_pressed("move_left"):
 		global_position.x -= HorizontalSpeed * delta
 		if global_position.x <= HorizontalRestraints["MIN"]:

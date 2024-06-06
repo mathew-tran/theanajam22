@@ -7,6 +7,7 @@ extends Control
 @onready var ObjectiveLabel = $Objective/Label
 
 @onready var FloatsWorthSprite = $Control/Sprite2D
+@onready var BlackoutPanel = $BlackoutPanel
 
 var CurrentContent = []
 var CurrentContentIndex = 0
@@ -53,7 +54,9 @@ func _input(event):
 				ClearText()
 				CurrentContent = []
 				EventManager.InjectDetDialogueComplete.emit()
-				EventManager.bIsInDialogue = false
+		else:
+			ClearText()
+
 
 func KillTween():
 	SpeechLabel.visible_characters = -1
@@ -61,11 +64,11 @@ func KillTween():
 	SpeechTween.kill()
 	SpeechTween = null
 
+
 func SetText():
+	BlackoutPanel.visible = true
 	SpeechLabel.visible_characters = 0
 	SpeechLabel.text = CurrentContent[CurrentContentIndex]
-
-
 	SpeechTween = get_tree().create_tween()
 
 
@@ -76,10 +79,19 @@ func SetText():
 	SpeechTween.tween_callback(KillTween)
 
 func ClearText():
-	SpeechLabel.text = ""
-	SpeechBubble.visible = false
+	if BlackoutPanel.visible:
+		BlackoutPanel.visible = false
+		SpeechLabel.text = ""
+		SpeechBubble.visible = false
+		EventManager.bIsInDialogue = false
+
 
 func SetObjectiveLabel(content):
+	var tween = get_tree().create_tween()
+	ObjectivePanel.modulate = Color(1,1,1,0)
+	ObjectivePanel.position.y = -100
+	tween.tween_property(ObjectivePanel, "modulate", Color.WHITE, .2)
+	tween.tween_property(ObjectivePanel, "position:y", 88, .2)
 	ObjectivePanel.visible = true
 	ObjectiveLabel.text = content
 
@@ -87,11 +99,11 @@ func ClearObjective():
 	ObjectivePanel.visible = false
 
 func OnInjectDetDialogue(content):
-	EventManager.bIsInDialogue = true
 	CurrentContent = SplitString(content)
 	CurrentContentIndex = 0
 	SetText()
 	SpeechBubble.visible = true
+	EventManager.bIsInDialogue = true
 
 func OnInjectObjective(content):
 	SetObjectiveLabel(content)
