@@ -15,5 +15,14 @@ func ActivateMission():
 	EventManager.InjectDetEmote.emit(EventManager.EMOTE.NEUTRAL)
 	EventManager.InjectObjective.emit("Get case file from Detective Floatsworth's house near the Clock Tower")
 
+	EventManager.Mission1EnableCase.emit()
+
+	await EventManager.MissionCasePickup
+
+	EventManager.ClearObjective.emit()
+
+	var content3 = "Nice job finding it!\nSo let's see here.."
+	EventManager.InjectDetDialogue.emit(content3)
+
 func DeactivateMission():
 	pass

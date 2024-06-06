@@ -15,4 +15,9 @@ signal InjectDialogueContinue
 signal InjectDetDialogueComplete
 
 signal InjectObjective(content)
+signal ClearObjective
 signal InjectDetEmote(emote : EMOTE)
+
+
+signal Mission1EnableCase
+signal MissionCasePickup

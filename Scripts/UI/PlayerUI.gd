@@ -19,6 +19,7 @@ func _ready():
 	EventManager.connect("PlayerHitRightBoundary", Callable(self, "OnPlayerHitRightBoundary"))
 	EventManager.connect("InjectDetDialogue", Callable(self, "OnInjectDetDialogue"))
 	EventManager.connect("InjectObjective", Callable(self, "OnInjectObjective"))
+	EventManager.connect("ClearObjective", Callable(self, "OnClearObjective"))
 	EventManager.connect("InjectDetEmote", Callable(self, "OnInjectDetEmote"))
 	ClearText()
 	ClearObjective()
@@ -78,6 +79,9 @@ func OnInjectDetEmote(emote : EventManager.EMOTE):
 		FloatsWorthSprite.texture = load("res://Art/DetFloatsworthBlush.svg")
 	elif emote == EventManager.EMOTE.SAD:
 		FloatsWorthSprite.texture = load("res://Art/DetFloatsworthSad.svg")
+
+func OnClearObjective():
+	ClearObjective()
 
 func SplitString(s: String):
 	var result = []

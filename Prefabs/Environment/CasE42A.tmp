@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyujepwgvdd77"]
+
+[ext_resource type="Texture2D" uid="uid://br7x260hch3cs" path="res://Art/CaseFile.svg" id="1_ce5kg"]
+[ext_resource type="Script" path="res://Scripts/Game/MissionCaseFile.gd" id="2_1mwxg"]
+
+[node name="Casefile" type="Sprite2D"]
+position = Vector2(-192, 72)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ce5kg")
+script = ExtResource("2_1mwxg")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = -70.0
+offset_top = -32.0
+offset_right = 70.0
+offset_bottom = 48.0
+
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
