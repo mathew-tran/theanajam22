@@ -4,3 +4,6 @@ signal PlayerHitLeftBoundary
 signal PlayerHitRightBoundary
 signal PlayerHitTopBoundary
 signal PlayerHitBottomBoundary
+signal InjectDetDialogue (content)
+signal InjectDialogueContinue
+signal InjectDetDialogueComplete

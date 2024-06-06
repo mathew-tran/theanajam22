@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=19 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://b6vv38hwl3eex" path="res://Prefabs/Environment/FriendsNote.tscn" id="13_jb8o8"]
 [ext_resource type="PackedScene" uid="uid://c4dj6j2f40cmo" path="res://Prefabs/Environment/DeadFriend.tscn" id="14_0tdpu"]
 [ext_resource type="PackedScene" uid="uid://b88eyax2ah30" path="res://Prefabs/Environment/DrinkVendingMachine.tscn" id="15_7ix5h"]
+[ext_resource type="PackedScene" uid="uid://ce3i4ayoi8uvk" path="res://Prefabs/Game/MissionStatements.tscn" id="18_5jp5u"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -350,7 +351,7 @@ position = Vector2(2176, 176)
 position = Vector2(2192, -408)
 
 [node name="Friend" parent="Environment" instance=ExtResource("9_15cmk")]
-position = Vector2(-72, 400)
+position = Vector2(360, -1048)
 scale = Vector2(0.297468, 0.297468)
 
 [node name="FloatsworthHouse" parent="Environment" instance=ExtResource("10_4emtf")]
@@ -389,3 +390,5 @@ script = ExtResource("4_nh21q")
 
 [node name="PlayerUI" parent="CanvasLayer" instance=ExtResource("1_tryda")]
 visible = false
+
+[node name="MissionStatements" parent="." instance=ExtResource("18_5jp5u")]

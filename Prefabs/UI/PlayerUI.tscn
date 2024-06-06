@@ -87,12 +87,17 @@ texture = ExtResource("3_kun2f")
 [node name="Label" type="Label" parent="Control/Speech Bubble"]
 layout_mode = 0
 offset_left = 140.0
-offset_top = 39.0
+offset_top = 27.0
 offset_right = 821.0
-offset_bottom = 189.0
+offset_bottom = 204.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
-text = "Let's look for a Balloon. He should have stripes."
+text = "Let's look for a Balloon. He should have stripes.
+asdasd
+das
+das
+"
+autowrap_mode = 2
 
 [node name="TextPip" type="TextureRect" parent="Control/Speech Bubble"]
 layout_mode = 0
