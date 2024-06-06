@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=24 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -17,7 +17,12 @@
 [ext_resource type="PackedScene" uid="uid://b6vv38hwl3eex" path="res://Prefabs/Environment/FriendsNote.tscn" id="13_jb8o8"]
 [ext_resource type="PackedScene" uid="uid://c4dj6j2f40cmo" path="res://Prefabs/Environment/DeadFriend.tscn" id="14_0tdpu"]
 [ext_resource type="PackedScene" uid="uid://b88eyax2ah30" path="res://Prefabs/Environment/DrinkVendingMachine.tscn" id="15_7ix5h"]
+[ext_resource type="PackedScene" uid="uid://c2u3o6j4qp2g3" path="res://Prefabs/Environment/Pond.tscn" id="16_e00e2"]
+[ext_resource type="PackedScene" uid="uid://bght7exy3yjyo" path="res://Prefabs/Environment/Rock1.tscn" id="17_t434j"]
 [ext_resource type="PackedScene" uid="uid://ce3i4ayoi8uvk" path="res://Prefabs/Game/MissionStatements.tscn" id="18_5jp5u"]
+[ext_resource type="PackedScene" uid="uid://tem7npw4qxip" path="res://Prefabs/Environment/Rock2.tscn" id="18_6jb8x"]
+[ext_resource type="PackedScene" uid="uid://34c8d3k1ygjh" path="res://Prefabs/Environment/Rock3.tscn" id="19_u3e56"]
+[ext_resource type="PackedScene" uid="uid://jiugunlglwge" path="res://Prefabs/Environment/Rock4.tscn" id="20_ywkt4"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -203,6 +208,63 @@ position = Vector2(3456, 880)
 [node name="TreeType40" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(3392, 704)
 
+[node name="TreeType64" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2432, -2128)
+
+[node name="TreeType65" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2728, -1928)
+
+[node name="TreeType66" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3360, -1984)
+
+[node name="TreeType67" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3784, -2400)
+
+[node name="TreeType68" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3848, -3024)
+
+[node name="TreeType69" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3016, -3168)
+
+[node name="TreeType70" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2432, -2944)
+
+[node name="TreeType71" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2184, -2560)
+
+[node name="TreeType72" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3536, -3104)
+
+[node name="TreeType73" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2488, -3280)
+
+[node name="TreeType74" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1624, -2688)
+
+[node name="TreeType75" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1888, -2016)
+
+[node name="TreeType76" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3664, -1608)
+
+[node name="TreeType77" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4152, -2160)
+
+[node name="TreeType78" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4248, -2712)
+
+[node name="TreeType79" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3816, -3440)
+
+[node name="TreeType80" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3224, -3456)
+
+[node name="TreeType81" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1872, -3280)
+
+[node name="TreeType82" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3216, -3040)
+
 [node name="TreeType41" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(3752, 880)
 
@@ -379,6 +441,74 @@ position = Vector2(1120, -1008)
 
 [node name="DrinkVendingMachine3" parent="Environment" instance=ExtResource("15_7ix5h")]
 position = Vector2(1080, -1008)
+
+[node name="Pond" parent="Environment" instance=ExtResource("16_e00e2")]
+
+[node name="Rock1" parent="Environment" instance=ExtResource("17_t434j")]
+position = Vector2(1824, -1000)
+
+[node name="Rock2" parent="Environment" instance=ExtResource("18_6jb8x")]
+position = Vector2(656, -3096)
+
+[node name="Rock5" parent="Environment" instance=ExtResource("18_6jb8x")]
+position = Vector2(1104, -2336)
+
+[node name="Rock6" parent="Environment" instance=ExtResource("18_6jb8x")]
+position = Vector2(2784, -960)
+
+[node name="Rock7" parent="Environment" instance=ExtResource("18_6jb8x")]
+position = Vector2(3624, -544)
+
+[node name="Rock8" parent="Environment" instance=ExtResource("18_6jb8x")]
+position = Vector2(2912, 960)
+
+[node name="Rock9" parent="Environment" instance=ExtResource("18_6jb8x")]
+position = Vector2(1040, 944)
+
+[node name="Rock10" parent="Environment" instance=ExtResource("18_6jb8x")]
+position = Vector2(-96, 888)
+
+[node name="Rock3" parent="Environment" instance=ExtResource("19_u3e56")]
+position = Vector2(4000, -2032)
+
+[node name="Rock4" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(1064, -80)
+
+[node name="Rock12" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(1728, -544)
+
+[node name="Rock13" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(2432, -1208)
+
+[node name="Rock14" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(3576, -1208)
+
+[node name="Rock15" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(4296, -912)
+
+[node name="Rock16" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(3904, -648)
+
+[node name="Rock17" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(1368, 728)
+
+[node name="Rock18" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(2128, 688)
+
+[node name="Rock19" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(80, 296)
+
+[node name="Rock20" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(160, -784)
+
+[node name="Rock21" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(936, -1488)
+
+[node name="Rock22" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(208, -2120)
+
+[node name="Rock11" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(3672, -96)
 
 [node name="Player" type="Camera2D" parent="."]
 visible = false

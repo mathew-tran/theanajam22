@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://jiugunlglwge"]
+
+[ext_resource type="Texture2D" uid="uid://dldml6xax22nk" path="res://Art/Rock4.svg" id="1_w1f3n"]
+
+[node name="Rock4" type="Sprite2D"]
+texture = ExtResource("1_w1f3n")

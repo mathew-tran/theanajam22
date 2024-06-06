@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="229.74373mm"
+   height="152.09076mm"
+   viewBox="0 0 229.74373 152.09076"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="Pongsvg.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.71891835"
+     inkscape:cx="294.88745"
+     inkscape:cy="299.75588"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="1699"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-30.42708,-67.733333)">
+    <path
+       style="fill:#19aeff;fill-opacity:1;stroke:none;stroke-width:2.23831;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0"
+       d="M 51.258723,95.90285 C 5.906447,129.51526 40.803063,226.42634 96.565913,219.46792 127.16328,209.49051 215.15383,193.27932 222.60228,181.57463 251.43413,136.26744 284.38481,85.1939 234.135,73.66116 188.92933,61.76394 72.596913,67.08714 51.258723,95.90285 Z"
+       id="path180"
+       sodipodi:nodetypes="sssss" />
+  </g>
+</svg>

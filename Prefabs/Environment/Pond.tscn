@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2u3o6j4qp2g3"]
+
+[ext_resource type="Texture2D" uid="uid://bkr1l1b1vts2h" path="res://Art/Pond.svg" id="1_13cvh"]
+
+[node name="Pond" type="Sprite2D"]
+position = Vector2(3112, -2504)
+texture = ExtResource("1_13cvh")
