@@ -1,6 +1,10 @@
 extends Control
 
 @onready var SpeechLabel = $"Control/Speech Bubble/Label"
+@onready var SpeechBubble = $"Control/Speech Bubble"
+
+@onready var ObjectivePanel = $Objective
+@onready var ObjectiveLabel = $Objective/Label
 
 var CurrentContent = []
 var CurrentContentIndex = 0
@@ -12,6 +16,9 @@ func _ready():
 	EventManager.connect("PlayerHitLeftBoundary", Callable(self, "OnPlayerHitLeftBoundary"))
 	EventManager.connect("PlayerHitRightBoundary", Callable(self, "OnPlayerHitRightBoundary"))
 	EventManager.connect("InjectDetDialogue", Callable(self, "OnInjectDetDialogue"))
+	EventManager.connect("InjectObjective", Callable(self, "OnInjectObjective"))
+	ClearText()
+	ClearObjective()
 
 func OnPlayerHitTopBoundary():
 	$TopBoundaryHint.ActivateHint()
@@ -29,21 +36,35 @@ func _input(event):
 	if event.is_action_pressed("mouse_click"):
 		if CurrentContent != []:
 			if CurrentContentIndex < len(CurrentContent) - 1:
-				EventManager.InjectDialogueContinue
+				EventManager.InjectDialogueContinue.emit()
 				CurrentContentIndex += 1
 				SetText()
 			else:
 				ClearText()
 				CurrentContent = []
+				EventManager.InjectDetDialogueComplete.emit()
 func SetText():
 	SpeechLabel.text = CurrentContent[CurrentContentIndex]
 
 func ClearText():
 	SpeechLabel.text = ""
+	SpeechBubble.visible = false
+
+func SetObjectiveLabel(content):
+	ObjectivePanel.visible = true
+	ObjectiveLabel.text = content
+
+func ClearObjective():
+	ObjectivePanel.visible = false
+
 func OnInjectDetDialogue(content):
 	CurrentContent = SplitString(content)
 	CurrentContentIndex = 0
 	SetText()
+	SpeechBubble.visible = true
+
+func OnInjectObjective(content):
+	SetObjectiveLabel(content)
 
 func SplitString(s: String):
 	var result = []

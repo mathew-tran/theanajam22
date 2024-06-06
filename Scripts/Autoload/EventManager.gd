@@ -7,3 +7,5 @@ signal PlayerHitBottomBoundary
 signal InjectDetDialogue (content)
 signal InjectDialogueContinue
 signal InjectDetDialogueComplete
+
+signal InjectObjective(content)
