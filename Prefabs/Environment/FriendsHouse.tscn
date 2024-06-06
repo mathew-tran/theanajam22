@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckyo8f268x01x"]
+
+[ext_resource type="Texture2D" uid="uid://dyb27kxg78er4" path="res://Art/FriendsHouse.svg" id="1_qxx3f"]
+
+[node name="FriendsHouse" type="Sprite2D"]
+position = Vector2(2120, -1536)
+texture = ExtResource("1_qxx3f")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4dj6j2f40cmo"]
+
+[ext_resource type="Texture2D" uid="uid://bq2y4f58fxyis" path="res://Art/DeadFriend.svg" id="1_1v0pi"]
+
+[node name="DeadFriend" type="Sprite2D"]
+texture = ExtResource("1_1v0pi")

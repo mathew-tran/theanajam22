@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://0rbuo4cafmta"]
+
+[ext_resource type="Texture2D" uid="uid://sm32yo0u3s70" path="res://Art/FloatsworthBuilding.svg" id="1_ixvce"]
+
+[node name="FloatsworthHouse" type="Sprite2D"]
+position = Vector2(-24, -24)
+texture = ExtResource("1_ixvce")

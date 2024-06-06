@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=18 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -10,6 +10,13 @@
 [ext_resource type="PackedScene" uid="uid://b1085mflhxfsi" path="res://Prefabs/Environment/WaterFountain.tscn" id="6_hkplv"]
 [ext_resource type="PackedScene" uid="uid://d4g3cq8c2rcr1" path="res://Prefabs/Environment/Hospital.tscn" id="7_gx38b"]
 [ext_resource type="PackedScene" uid="uid://c78k24a6kwvpn" path="res://Prefabs/Environment/ClockTower.tscn" id="8_y5hxk"]
+[ext_resource type="PackedScene" uid="uid://b06c8tfcedv56" path="res://Prefabs/Environment/Friend.tscn" id="9_15cmk"]
+[ext_resource type="PackedScene" uid="uid://0rbuo4cafmta" path="res://Prefabs/Environment/FloatsworthHouse.tscn" id="10_4emtf"]
+[ext_resource type="PackedScene" uid="uid://dyujepwgvdd77" path="res://Prefabs/Environment/CaseFile.tscn" id="11_x216x"]
+[ext_resource type="PackedScene" uid="uid://ckyo8f268x01x" path="res://Prefabs/Environment/FriendsHouse.tscn" id="12_g2pq3"]
+[ext_resource type="PackedScene" uid="uid://b6vv38hwl3eex" path="res://Prefabs/Environment/FriendsNote.tscn" id="13_jb8o8"]
+[ext_resource type="PackedScene" uid="uid://c4dj6j2f40cmo" path="res://Prefabs/Environment/DeadFriend.tscn" id="14_0tdpu"]
+[ext_resource type="PackedScene" uid="uid://b88eyax2ah30" path="res://Prefabs/Environment/DrinkVendingMachine.tscn" id="15_7ix5h"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -105,6 +112,114 @@ position = Vector2(1488, 176)
 [node name="TreeType9" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(1520, 304)
 
+[node name="TreeType28" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(240, 992)
+
+[node name="TreeType29" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(488, 832)
+
+[node name="TreeType30" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(808, 968)
+
+[node name="TreeType31" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1040, 720)
+
+[node name="TreeType47" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(712, 680)
+
+[node name="TreeType48" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(152, 808)
+
+[node name="TreeType49" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-344, 992)
+
+[node name="TreeType50" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-480, 664)
+
+[node name="TreeType51" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-840, 800)
+
+[node name="TreeType52" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-592, 320)
+
+[node name="TreeType53" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-1000, -24)
+
+[node name="TreeType54" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-728, -616)
+
+[node name="TreeType55" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-368, -992)
+
+[node name="TreeType56" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-800, -1176)
+
+[node name="TreeType57" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-528, -1408)
+
+[node name="TreeType58" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-800, -1784)
+
+[node name="TreeType59" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-368, -1952)
+
+[node name="TreeType60" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-808, -2392)
+
+[node name="TreeType61" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-512, -2544)
+
+[node name="TreeType62" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-792, -2712)
+
+[node name="TreeType63" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(-792, -2712)
+
+[node name="TreeType32" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1328, 904)
+
+[node name="TreeType33" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1672, 728)
+
+[node name="TreeType34" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1992, 912)
+
+[node name="TreeType35" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2240, 776)
+
+[node name="TreeType36" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2520, 904)
+
+[node name="TreeType37" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2816, 752)
+
+[node name="TreeType38" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2584, 664)
+
+[node name="TreeType39" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3456, 880)
+
+[node name="TreeType40" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3392, 704)
+
+[node name="TreeType41" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3752, 880)
+
+[node name="TreeType42" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3648, 736)
+
+[node name="TreeType43" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4088, 824)
+
+[node name="TreeType44" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4352, 712)
+
+[node name="TreeType45" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4368, 984)
+
+[node name="TreeType46" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3920, 720)
+
 [node name="TreeType2" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(264, 368)
 
@@ -160,6 +275,27 @@ rotation = -1.57079
 position = Vector2(1232, -1438)
 rotation = -1.57079
 
+[node name="Road17" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(1669, -1352)
+
+[node name="Road18" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(2456, -1352)
+
+[node name="Road19" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(3216, -1352)
+
+[node name="Road20" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(3136, -912)
+rotation = 1.57079
+
+[node name="Road21" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(3136, -120)
+rotation = 1.57079
+
+[node name="Road22" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(3136, 664)
+rotation = 1.57079
+
 [node name="Road9" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(792, -1790)
 
@@ -179,19 +315,31 @@ position = Vector2(344.5, 33.5)
 position = Vector2(264.5, 33.5)
 
 [node name="FenceType1" parent="Environment" instance=ExtResource("4_rypjo")]
-position = Vector2(1392, -232)
+position = Vector2(1620.5, -149.5)
 
 [node name="FenceType2" parent="Environment" instance=ExtResource("4_rypjo")]
-position = Vector2(1504, -232)
+position = Vector2(1732.5, -149.5)
 
 [node name="FenceType3" parent="Environment" instance=ExtResource("4_rypjo")]
-position = Vector2(1616, -232)
+position = Vector2(1844.5, -149.5)
 
 [node name="FenceType4" parent="Environment" instance=ExtResource("4_rypjo")]
-position = Vector2(1728, -232)
+position = Vector2(1956.5, -149.5)
+
+[node name="FenceType5" parent="Environment" instance=ExtResource("4_rypjo")]
+position = Vector2(2428.5, -149.5)
+
+[node name="FenceType6" parent="Environment" instance=ExtResource("4_rypjo")]
+position = Vector2(2540.5, -149.5)
+
+[node name="FenceType7" parent="Environment" instance=ExtResource("4_rypjo")]
+position = Vector2(2652.5, -149.5)
+
+[node name="FenceType8" parent="Environment" instance=ExtResource("4_rypjo")]
+position = Vector2(2764.5, -149.5)
 
 [node name="DonutShop" parent="Environment" instance=ExtResource("5_bi2js")]
-position = Vector2(1056, 56)
+position = Vector2(3304, -1040)
 
 [node name="WaterFountain" parent="Environment" instance=ExtResource("6_hkplv")]
 position = Vector2(2176, 176)
@@ -200,6 +348,36 @@ position = Vector2(2176, 176)
 
 [node name="ClockTower" parent="Environment" instance=ExtResource("8_y5hxk")]
 position = Vector2(2192, -408)
+
+[node name="Friend" parent="Environment" instance=ExtResource("9_15cmk")]
+position = Vector2(-72, 400)
+scale = Vector2(0.297468, 0.297468)
+
+[node name="FloatsworthHouse" parent="Environment" instance=ExtResource("10_4emtf")]
+position = Vector2(1432, -1616)
+
+[node name="Casefile" parent="Environment" instance=ExtResource("11_x216x")]
+position = Vector2(1352, -1440)
+
+[node name="FriendsHouse" parent="Environment" instance=ExtResource("12_g2pq3")]
+position = Vector2(510.5, -1108.5)
+
+[node name="FriendNote" parent="Environment" instance=ExtResource("13_jb8o8")]
+position = Vector2(614.5, -1012.5)
+scale = Vector2(0.271429, 0.241935)
+
+[node name="DeadFriend" parent="Environment" instance=ExtResource("14_0tdpu")]
+position = Vector2(3560, 216)
+scale = Vector2(0.5, 0.5)
+
+[node name="DrinkVendingMachine" parent="Environment" instance=ExtResource("15_7ix5h")]
+position = Vector2(1160, -1008)
+
+[node name="DrinkVendingMachine2" parent="Environment" instance=ExtResource("15_7ix5h")]
+position = Vector2(1120, -1008)
+
+[node name="DrinkVendingMachine3" parent="Environment" instance=ExtResource("15_7ix5h")]
+position = Vector2(1080, -1008)
 
 [node name="Player" type="Camera2D" parent="."]
 visible = false

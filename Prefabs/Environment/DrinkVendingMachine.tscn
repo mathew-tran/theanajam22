@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b88eyax2ah30"]
+
+[ext_resource type="Texture2D" uid="uid://dd2ecqd3e0nrc" path="res://Art/DrinkVendingMachines.svg" id="1_vl2y5"]
+
+[node name="DrinkVendingMachine" type="Sprite2D"]
+texture = ExtResource("1_vl2y5")

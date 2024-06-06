@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyujepwgvdd77"]
+
+[ext_resource type="Texture2D" uid="uid://br7x260hch3cs" path="res://Art/CaseFile.svg" id="1_ce5kg"]
+
+[node name="Casefile" type="Sprite2D"]
+position = Vector2(-192, 72)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ce5kg")
