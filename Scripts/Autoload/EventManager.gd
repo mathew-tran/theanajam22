@@ -29,6 +29,7 @@ var ClickTimer : Timer
 func _ready():
 	ClickTimer = Timer.new()
 	ClickTimer.one_shot = true
+	ClickTimer.wait_time = .3
 	add_child(ClickTimer)
 
 func CanClickObject():

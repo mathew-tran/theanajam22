@@ -24,6 +24,9 @@ func _input(event):
 	if event.is_action_pressed("mouse_click"):
 		if IsMouseClicked(get_global_mouse_position()):
 			SuccessfulMouseClick()
+
+			await EventManager.InjectDetDialogueComplete
+
 			EventManager.StartClickTimer()
 
 func SuccessfulMouseClick():
