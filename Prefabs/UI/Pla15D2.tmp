@@ -98,7 +98,6 @@ das
 das
 "
 autowrap_mode = 2
-visible_characters_behavior = 1
 
 [node name="TextPip" type="TextureRect" parent="Control/Speech Bubble"]
 layout_mode = 0

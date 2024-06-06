@@ -10,6 +10,8 @@ extends Control
 
 var CurrentContent = []
 var CurrentContentIndex = 0
+
+var SpeechTween : Tween
 func _ready():
 	visible = true
 	$Control/AnimationPlayer.play("animate")
@@ -39,6 +41,10 @@ func OnPlayerHitRightBoundary():
 func _input(event):
 	if event.is_action_pressed("mouse_click"):
 		if CurrentContent != []:
+			if is_instance_valid(SpeechTween):
+				KillTween()
+				return
+
 			if CurrentContentIndex < len(CurrentContent) - 1:
 				EventManager.InjectDialogueContinue.emit()
 				CurrentContentIndex += 1
@@ -48,8 +54,26 @@ func _input(event):
 				CurrentContent = []
 				EventManager.InjectDetDialogueComplete.emit()
 				EventManager.bIsInDialogue = false
+
+func KillTween():
+	SpeechLabel.visible_characters = -1
+	SpeechTween.stop()
+	SpeechTween.kill()
+	SpeechTween = null
+
 func SetText():
+	SpeechLabel.visible_characters = 0
 	SpeechLabel.text = CurrentContent[CurrentContentIndex]
+
+
+	SpeechTween = get_tree().create_tween()
+
+
+	var duration = 0.0
+	for x in range(0, len(CurrentContent[CurrentContentIndex])):
+		duration += .03
+	SpeechTween.tween_property(SpeechLabel, "visible_characters", len(CurrentContent[CurrentContentIndex]), duration)
+	SpeechTween.tween_callback(KillTween)
 
 func ClearText():
 	SpeechLabel.text = ""
