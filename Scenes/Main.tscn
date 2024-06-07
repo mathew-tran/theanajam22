@@ -412,6 +412,9 @@ scale = Vector2(0.994557, 1)
 [node name="Road19" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(3216, -1352)
 
+[node name="Road27" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(3984, -1352)
+
 [node name="Road20" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(3136, -912)
 rotation = 1.57079
@@ -422,6 +425,10 @@ rotation = 1.57079
 
 [node name="Road22" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(3136, 664)
+rotation = 1.57079
+
+[node name="Road26" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(3136, 1448)
 rotation = 1.57079
 
 [node name="Road9" parent="Environment" instance=ExtResource("1_d763k")]
@@ -580,6 +587,9 @@ position = Vector2(4032, 224)
 
 [node name="CityBoard" parent="Environment" instance=ExtResource("21_s8jmy")]
 position = Vector2(-688, -24)
+
+[node name="CityBoard2" parent="Environment" instance=ExtResource("21_s8jmy")]
+position = Vector2(4120, -1528)
 
 [node name="Barbershop" parent="Environment" instance=ExtResource("22_jaxfr")]
 position = Vector2(1848, -1472)
