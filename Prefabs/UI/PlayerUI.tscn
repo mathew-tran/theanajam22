@@ -214,5 +214,5 @@ offset_top = 972.0
 offset_right = 1863.0
 offset_bottom = 1031.0
 theme_override_font_sizes/font_size = 20
-text = "\"J\" to show Journal
+text = "\"J\" to toggle Journal
 \"P\" to Pause"

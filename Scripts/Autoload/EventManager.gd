@@ -23,6 +23,9 @@ signal AddJournalEntry(content)
 signal Mission1EnableCase
 signal MissionCasePickup
 
+signal Mission1EnableDeadFriend
+signal Mission1DeadFriendFound
+
 var bIsInDialogue = false
 var bIsInPauseMenu = false
 

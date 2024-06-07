@@ -12,4 +12,4 @@ func SuccessfulMouseClick():
 		EventManager.MissionCasePickup.emit()
 		queue_free()
 	else:
-		EventManager.InjectDetDialogue.emit("DefaultContent")
+		EventManager.InjectDetDialogue.emit(DefaultContent)

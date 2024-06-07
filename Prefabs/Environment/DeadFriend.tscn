@@ -1,14 +1,14 @@
 [gd_scene load_steps=4 format=3 uid="uid://c4dj6j2f40cmo"]
 
 [ext_resource type="Texture2D" uid="uid://bq2y4f58fxyis" path="res://Art/DeadFriend.svg" id="1_1v0pi"]
-[ext_resource type="Script" path="res://Scripts/Game/ClickableObject.gd" id="2_5dl6m"]
+[ext_resource type="Script" path="res://Scripts/Game/MissionDeadFriend.gd" id="2_2gm2o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cr6xy"]
 size = Vector2(264, 58)
 
 [node name="DeadFriend" type="Sprite2D"]
 texture = ExtResource("1_1v0pi")
-script = ExtResource("2_5dl6m")
+script = ExtResource("2_2gm2o")
 DefaultContent = "This is the victim. I wonder what happened."
 
 [node name="Area2D" type="Area2D" parent="."]

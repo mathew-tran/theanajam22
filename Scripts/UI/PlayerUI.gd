@@ -137,11 +137,11 @@ func SplitString(s: String):
 	s = s.strip_edges()
 	var splitString = s.split("\n")
 	for split in splitString:
-		if len(split) >= 100:
+		if len(split) >= 150:
 			var words = split.split(" ")
 			var sentence = ""
 			for word in words:
-				if len(sentence) + len(word) < 100:
+				if len(sentence) + len(word) < 150:
 					sentence += word + " "
 				else:
 					result.append(sentence)

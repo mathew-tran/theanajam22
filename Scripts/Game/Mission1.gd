@@ -2,7 +2,7 @@ extends MissionBase
 
 func ActivateMission():
 
-	EventManager.AddJournalEntry.emit("Going to assist Floatsworth with an investigation today.")
+	EventManager.AddJournalEntry.emit("Going to assist Detective Floatsworth in Balloon City with an investigation today.")
 
 	var content1 = "Welcome fellow detective.\nI need some help on this case. \nCan you help me?"
 	EventManager.InjectDetDialogue.emit(content1)
@@ -28,8 +28,27 @@ func ActivateMission():
 
 	EventManager.ClearObjective.emit()
 
-	var content3 = "Nice job finding it!\nSo let's see here.."
+	var content3 = "Nice job finding it!\nSo let's see here..\n.. So there's a potential murder. Puncture wounds. The body is somewhere south east of here.\nShould be easy to find."
 	EventManager.InjectDetDialogue.emit(content3)
+
+	await EventManager.InjectDetDialogueComplete
+
+	EventManager.AddJournalEntry.emit("Picked up the case file. We are looking at a potential murder. We need to look for the body somewhere south east of the city.")
+	EventManager.InjectObjective.emit("Find the body")
+
+	EventManager.Mission1EnableDeadFriend.emit()
+
+	await EventManager.Mission1DeadFriendFound
+
+	EventManager.InjectDetEmote.emit(EventManager.EMOTE.SAD)
+	EventManager.ClearObjective.emit()
+
+	var content4 = "Oh.. I know this fellow. His name was Benny.\n.. Benny was always tying knots in his string. Said it helped him think, but he was always left all tangled up."
+	EventManager.InjectDetDialogue.emit(content4)
+
+	EventManager.AddJournalEntry.emit("Victim's name was Benny. Detective Floatsworth seems to have known him.")
+	EventManager.InjectDetDialogueComplete
+
 
 func DeactivateMission():
 	pass
