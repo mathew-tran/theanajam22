@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://d3852jnmcyiav"]
+
+[ext_resource type="Texture2D" uid="uid://yxrtpms2w0aw" path="res://Art/PizzaShop.svg" id="1_7kgic"]
+
+[node name="PizzaShop" type="Sprite2D"]
+texture = ExtResource("1_7kgic")

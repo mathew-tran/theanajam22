@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bque3377aydc4"]
+
+[ext_resource type="Texture2D" uid="uid://lk8paaqfkh80" path="res://Art/FastFood.svg" id="1_534am"]
+
+[node name="FastfoodShop" type="Sprite2D"]
+texture = ExtResource("1_534am")

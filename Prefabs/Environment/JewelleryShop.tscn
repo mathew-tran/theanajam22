@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cedqk1fjyf434"]
+
+[ext_resource type="Texture2D" uid="uid://c2upd0l03n62l" path="res://Art/JewelleryShop.svg" id="1_ixvbi"]
+
+[node name="JewelleryShop" type="Sprite2D"]
+texture = ExtResource("1_ixvbi")

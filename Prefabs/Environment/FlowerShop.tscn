@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://fqmnsxrgwgjh"]
+
+[ext_resource type="Texture2D" uid="uid://cy5yjo1m360rf" path="res://Art/FlowerShop.svg" id="1_m6asg"]
+
+[node name="FlowerShop" type="Sprite2D"]
+texture = ExtResource("1_m6asg")

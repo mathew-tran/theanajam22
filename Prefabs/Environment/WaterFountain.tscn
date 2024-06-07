@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://2yoads2j2x4b" path="res://Art/WaterFountain.svg" id="1_3llp6"]
 [ext_resource type="Script" path="res://Scripts/Game/ClickableObject.gd" id="2_bm3y3"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_7dq3a"]
-size = Vector2(336, 608)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0qymp"]
+size = Vector2(168, 160)
 
 [node name="WaterFountain" type="Sprite2D"]
 texture = ExtResource("1_3llp6")
@@ -14,4 +14,5 @@ DefaultContent = ".. A water fountain. Nothing to see here."
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("RectangleShape2D_7dq3a")
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_0qymp")

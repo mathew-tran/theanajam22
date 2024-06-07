@@ -47,9 +47,9 @@ func _input(event):
 				return
 
 			if CurrentContentIndex < len(CurrentContent) - 1:
-				EventManager.InjectDialogueContinue.emit()
 				CurrentContentIndex += 1
 				SetText()
+				EventManager.InjectDialogueContinue.emit()
 			else:
 				ClearText()
 				CurrentContent = []
@@ -59,15 +59,17 @@ func _input(event):
 
 
 func KillTween():
-	SpeechLabel.visible_characters = -1
+	SpeechLabel.visible_characters = 999
 	SpeechTween.stop()
 	SpeechTween.kill()
 	SpeechTween = null
 
 
 func SetText():
-	BlackoutPanel.visible = true
+	SpeechLabel.text = ""
 	SpeechLabel.visible_characters = 0
+	BlackoutPanel.visible = true
+
 	SpeechLabel.text = CurrentContent[CurrentContentIndex]
 	SpeechTween = get_tree().create_tween()
 
@@ -79,9 +81,9 @@ func SetText():
 	SpeechTween.tween_callback(KillTween)
 
 func ClearText():
+	SpeechLabel.text = ""
 	if BlackoutPanel.visible:
 		BlackoutPanel.visible = false
-		SpeechLabel.text = ""
 		SpeechBubble.visible = false
 		EventManager.bIsInDialogue = false
 
@@ -101,6 +103,7 @@ func ClearObjective():
 	ObjectivePanel.visible = false
 
 func OnInjectDetDialogue(content):
+	SpeechLabel.text = ""
 	CurrentContent = SplitString(content)
 	CurrentContentIndex = 0
 	SetText()

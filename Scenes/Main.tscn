@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=31 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -23,6 +23,13 @@
 [ext_resource type="PackedScene" uid="uid://tem7npw4qxip" path="res://Prefabs/Environment/Rock2.tscn" id="18_6jb8x"]
 [ext_resource type="PackedScene" uid="uid://34c8d3k1ygjh" path="res://Prefabs/Environment/Rock3.tscn" id="19_u3e56"]
 [ext_resource type="PackedScene" uid="uid://jiugunlglwge" path="res://Prefabs/Environment/Rock4.tscn" id="20_ywkt4"]
+[ext_resource type="PackedScene" uid="uid://82pwc0cdcig7" path="res://Prefabs/Environment/CityBoard.tscn" id="21_s8jmy"]
+[ext_resource type="PackedScene" uid="uid://dghbssc1jvdf7" path="res://Prefabs/Environment/BarberShop.tscn" id="22_jaxfr"]
+[ext_resource type="PackedScene" uid="uid://cedqk1fjyf434" path="res://Prefabs/Environment/JewelleryShop.tscn" id="23_gw5m4"]
+[ext_resource type="PackedScene" uid="uid://fqmnsxrgwgjh" path="res://Prefabs/Environment/FlowerShop.tscn" id="24_xqrv5"]
+[ext_resource type="PackedScene" uid="uid://bque3377aydc4" path="res://Prefabs/Environment/FastfoodShop.tscn" id="25_r6dqe"]
+[ext_resource type="PackedScene" uid="uid://d3852jnmcyiav" path="res://Prefabs/Environment/PizzaShop.tscn" id="26_psy55"]
+[ext_resource type="PackedScene" uid="uid://ibcfnnrv6yq" path="res://Prefabs/Environment/PhoneBooth.tscn" id="27_f6ge6"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -247,6 +254,54 @@ position = Vector2(1888, -2016)
 [node name="TreeType76" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(3664, -1608)
 
+[node name="TreeType83" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4280, -112)
+
+[node name="TreeType86" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3960, -64)
+
+[node name="TreeType87" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4192, 320)
+
+[node name="TreeType88" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3536, -992)
+
+[node name="TreeType89" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(4216, -680)
+
+[node name="TreeType90" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2720, -648)
+
+[node name="TreeType91" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2928, -376)
+
+[node name="TreeType92" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(1504, -752)
+
+[node name="TreeType93" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(2136, -1088)
+
+[node name="TreeType94" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(992, -2032)
+
+[node name="TreeType95" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(344, -2544)
+
+[node name="TreeType96" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(880, -2800)
+
+[node name="TreeType97" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(320, -3128)
+
+[node name="TreeType98" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(744, -3400)
+
+[node name="TreeType84" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3656, -88)
+
+[node name="TreeType85" parent="Environment" instance=ExtResource("3_u3w0x")]
+position = Vector2(3656, -88)
+
 [node name="TreeType77" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(4152, -2160)
 
@@ -313,6 +368,12 @@ position = Vector2(2611.5, 295)
 [node name="Road4" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(0.5, 164.5)
 
+[node name="Road23" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(-784, 167)
+
+[node name="Road24" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(-784, 499)
+
 [node name="Road5" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(793.5, 164.5)
 
@@ -343,6 +404,10 @@ position = Vector2(1669, -1352)
 
 [node name="Road18" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(2456, -1352)
+
+[node name="Road25" parent="Environment" instance=ExtResource("1_d763k")]
+position = Vector2(2698, -1032)
+scale = Vector2(0.994557, 1)
 
 [node name="Road19" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(3216, -1352)
@@ -402,7 +467,7 @@ position = Vector2(2652.5, -149.5)
 position = Vector2(2764.5, -149.5)
 
 [node name="DonutShop" parent="Environment" instance=ExtResource("5_bi2js")]
-position = Vector2(3304, -1040)
+position = Vector2(2992, -1144)
 
 [node name="WaterFountain" parent="Environment" instance=ExtResource("6_hkplv")]
 position = Vector2(2176, 176)
@@ -417,10 +482,10 @@ position = Vector2(360, -1048)
 scale = Vector2(0.297468, 0.297468)
 
 [node name="FloatsworthHouse" parent="Environment" instance=ExtResource("10_4emtf")]
-position = Vector2(1432, -1616)
+position = Vector2(1432, -1560)
 
 [node name="Casefile" parent="Environment" instance=ExtResource("11_x216x")]
-position = Vector2(1352, -1440)
+position = Vector2(1360, -1384)
 
 [node name="FriendsHouse" parent="Environment" instance=ExtResource("12_g2pq3")]
 position = Vector2(510.5, -1108.5)
@@ -454,7 +519,7 @@ position = Vector2(656, -3096)
 position = Vector2(1104, -2336)
 
 [node name="Rock6" parent="Environment" instance=ExtResource("18_6jb8x")]
-position = Vector2(2784, -960)
+position = Vector2(2712, -896)
 
 [node name="Rock7" parent="Environment" instance=ExtResource("18_6jb8x")]
 position = Vector2(3624, -544)
@@ -478,7 +543,7 @@ position = Vector2(1064, -80)
 position = Vector2(1728, -544)
 
 [node name="Rock13" parent="Environment" instance=ExtResource("20_ywkt4")]
-position = Vector2(2432, -1208)
+position = Vector2(2144, -920)
 
 [node name="Rock14" parent="Environment" instance=ExtResource("20_ywkt4")]
 position = Vector2(3576, -1208)
@@ -508,7 +573,37 @@ position = Vector2(936, -1488)
 position = Vector2(208, -2120)
 
 [node name="Rock11" parent="Environment" instance=ExtResource("20_ywkt4")]
-position = Vector2(3672, -96)
+position = Vector2(4032, 224)
+
+[node name="Rock23" parent="Environment" instance=ExtResource("20_ywkt4")]
+position = Vector2(4032, 224)
+
+[node name="CityBoard" parent="Environment" instance=ExtResource("21_s8jmy")]
+position = Vector2(-688, -24)
+
+[node name="Barbershop" parent="Environment" instance=ExtResource("22_jaxfr")]
+position = Vector2(1848, -1472)
+
+[node name="JewelleryShop" parent="Environment" instance=ExtResource("23_gw5m4")]
+position = Vector2(1656, -1472)
+
+[node name="FlowerShop" parent="Environment" instance=ExtResource("24_xqrv5")]
+position = Vector2(2032, -1468)
+
+[node name="FastfoodShop" parent="Environment" instance=ExtResource("25_r6dqe")]
+position = Vector2(2809, -1143)
+
+[node name="PizzaShop" parent="Environment" instance=ExtResource("26_psy55")]
+position = Vector2(2624, -1144)
+
+[node name="PhoneBooth" parent="Environment" instance=ExtResource("27_f6ge6")]
+position = Vector2(1168, -296)
+
+[node name="PhoneBooth2" parent="Environment" instance=ExtResource("27_f6ge6")]
+position = Vector2(2512, -1128)
+
+[node name="PhoneBooth3" parent="Environment" instance=ExtResource("27_f6ge6")]
+position = Vector2(1168, -1440)
 
 [node name="Player" type="Camera2D" parent="."]
 visible = false

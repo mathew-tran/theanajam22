@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dghbssc1jvdf7"]
+
+[ext_resource type="Texture2D" uid="uid://d2u5nugk6tgj5" path="res://Art/Barbershop.svg" id="1_s1ca1"]
+
+[node name="Barbershop" type="Sprite2D"]
+texture = ExtResource("1_s1ca1")
