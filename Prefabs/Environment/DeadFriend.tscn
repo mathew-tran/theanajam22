@@ -9,7 +9,7 @@ size = Vector2(264, 58)
 [node name="DeadFriend" type="Sprite2D"]
 texture = ExtResource("1_1v0pi")
 script = ExtResource("2_2gm2o")
-DefaultContent = "This is the victim. I wonder what happened."
+DefaultContent = ".. Let's check the case files first."
 
 [node name="Area2D" type="Area2D" parent="."]
 

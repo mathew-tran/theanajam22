@@ -2,7 +2,7 @@ extends ClickableObject
 
 func _ready():
 	EventManager.connect("Mission1EnableDeadFriend", Callable(self, "OnMission1EnableDeadFriend"))
-
+	bIsEnabled = false
 
 func OnMission1EnableDeadFriend():
 	bIsEnabled = true
