@@ -17,8 +17,6 @@ func IsMouseClicked(mouse_pos: Vector2) -> bool:
 	return mouse_pos.x >= top_left.x and mouse_pos.x <= bottom_right.x and mouse_pos.y >= top_left.y and mouse_pos.y <= bottom_right.y
 
 func _input(event):
-	if EventManager.bIsInDialogue:
-		return
 	if EventManager.CanClickObject() == false:
 		return
 	if event.is_action_pressed("mouse_click"):

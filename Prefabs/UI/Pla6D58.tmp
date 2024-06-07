@@ -194,5 +194,4 @@ grow_vertical = 2
 rotation = 1.5708
 
 [node name="PauseMenu" parent="." instance=ExtResource("6_f5lj1")]
-visible = false
 layout_mode = 1

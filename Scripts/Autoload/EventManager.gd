@@ -23,6 +23,7 @@ signal Mission1EnableCase
 signal MissionCasePickup
 
 var bIsInDialogue = false
+var bIsInPauseMenu = false
 
 var ClickTimer : Timer
 
@@ -32,8 +33,17 @@ func _ready():
 	ClickTimer.wait_time = .3
 	add_child(ClickTimer)
 
+func CanDoDialogue():
+	return bIsInDialogue and bIsInPauseMenu == false
+
 func CanClickObject():
-	return ClickTimer.time_left == 0.0
+	return ClickTimer.time_left == 0.0 and bIsInPauseMenu == false and bIsInDialogue == false
+
+func CanDoAction():
+	if bIsInPauseMenu:
+		return false
+	return bIsInDialogue == false
 
 func StartClickTimer():
 	ClickTimer.start()
+

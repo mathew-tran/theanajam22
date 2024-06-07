@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://d386pnhgn0pv"]
+
+[ext_resource type="Script" path="res://Scripts/UI/RestartButton.gd" id="1_bufoo"]
+
+[node name="RestartButton" type="Button"]
+custom_minimum_size = Vector2(0, 80)
+theme_override_font_sizes/font_size = 60
+text = "Restart"
+script = ExtResource("1_bufoo")
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]

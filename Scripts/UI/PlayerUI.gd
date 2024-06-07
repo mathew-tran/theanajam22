@@ -2,6 +2,7 @@ extends Control
 
 @onready var SpeechLabel = $"Control/Speech Bubble/Label"
 @onready var SpeechBubble = $"Control/Speech Bubble"
+@onready var TextPip = $"Control/Speech Bubble/TextPip"
 
 @onready var ObjectivePanel = $Objective
 @onready var ObjectiveLabel = $Objective/Label
@@ -40,7 +41,7 @@ func OnPlayerHitRightBoundary():
 	$RightBoundaryHint.ActivateHint()
 
 func _input(event):
-	if event.is_action_pressed("mouse_click"):
+	if event.is_action_pressed("mouse_click") and EventManager.CanDoDialogue():
 		if CurrentContent != []:
 			if is_instance_valid(SpeechTween):
 				KillTween()
@@ -63,9 +64,11 @@ func KillTween():
 	SpeechTween.stop()
 	SpeechTween.kill()
 	SpeechTween = null
+	TextPip.visible = true
 
 
 func SetText():
+	TextPip.visible = false
 	SpeechLabel.text = ""
 	SpeechLabel.visible_characters = 0
 	BlackoutPanel.visible = true

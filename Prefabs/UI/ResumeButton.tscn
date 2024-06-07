@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccr7qms04rxl1"]
+
+[ext_resource type="Script" path="res://Scripts/UI/ResumeButton.gd" id="1_d5thx"]
+
+[node name="Resume" type="Button"]
+custom_minimum_size = Vector2(0, 80)
+theme_override_font_sizes/font_size = 60
+text = "Resume Game"
+script = ExtResource("1_d5thx")
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]

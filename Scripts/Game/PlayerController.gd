@@ -21,7 +21,7 @@ var ScrollSpeed = 10
 
 
 func _process(delta):
-	if EventManager.bIsInDialogue:
+	if EventManager.CanDoAction() == false:
 		return
 
 	if Input.is_action_pressed("move_left"):
