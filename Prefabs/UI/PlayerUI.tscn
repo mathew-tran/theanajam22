@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://b82bxvwiipqyk"]
+[gd_scene load_steps=11 format=3 uid="uid://b82bxvwiipqyk"]
 
 [ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_aif20"]
 [ext_resource type="Texture2D" uid="uid://dwpyojfn0u62a" path="res://Art/DetFloatsworth.svg" id="1_jqmt1"]
+[ext_resource type="PackedScene" uid="uid://pcg0sohomyee" path="res://Prefabs/UI/Journal.tscn" id="2_42688"]
 [ext_resource type="Texture2D" uid="uid://b11aibjq7m7tt" path="res://Art/SpeechBubblePointed.svg" id="3_kun2f"]
 [ext_resource type="Texture2D" uid="uid://y5exiahcqx3d" path="res://Art/TextPip.svg" id="4_p8xya"]
 [ext_resource type="PackedScene" uid="uid://duiiqyqvey730" path="res://Prefabs/UI/BoundaryHint.tscn" id="5_p065d"]
@@ -51,6 +52,15 @@ anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 script = ExtResource("1_aif20")
+
+[node name="Journal" parent="." instance=ExtResource("2_42688")]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 
 [node name="Objective" type="Panel" parent="."]
 layout_mode = 1
@@ -196,3 +206,13 @@ rotation = 1.5708
 [node name="PauseMenu" parent="." instance=ExtResource("6_f5lj1")]
 visible = false
 layout_mode = 1
+
+[node name="ControlTips" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1683.0
+offset_top = 972.0
+offset_right = 1863.0
+offset_bottom = 1031.0
+theme_override_font_sizes/font_size = 20
+text = "\"J\" to show Journal
+\"P\" to Pause"

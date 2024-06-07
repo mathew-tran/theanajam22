@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://xj6i11s16lto"]
+
+[ext_resource type="Script" path="res://Scripts/UI/JournalEntry.gd" id="1_2jbf1"]
+
+[node name="Label" type="Label"]
+custom_minimum_size = Vector2(400, 50)
+theme_override_font_sizes/font_size = 25
+text = "[9:03PM] - Talked to Detective Floatsworth To see what he wanted."
+autowrap_mode = 2
+script = ExtResource("1_2jbf1")

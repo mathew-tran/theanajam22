@@ -14,6 +14,7 @@ var CurrentContent = []
 var CurrentContentIndex = 0
 
 var SpeechTween : Tween
+@onready var Tips = $ControlTips
 func _ready():
 	visible = true
 	$Control/AnimationPlayer.play("animate")
@@ -68,6 +69,7 @@ func KillTween():
 
 
 func SetText():
+	Tips.visible = false
 	TextPip.visible = false
 	SpeechLabel.text = ""
 	SpeechLabel.visible_characters = 0
@@ -85,6 +87,7 @@ func SetText():
 
 func ClearText():
 	SpeechLabel.text = ""
+	Tips.visible = true
 	if BlackoutPanel.visible:
 		BlackoutPanel.visible = false
 		SpeechBubble.visible = false

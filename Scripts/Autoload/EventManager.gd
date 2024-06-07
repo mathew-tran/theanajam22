@@ -17,6 +17,7 @@ signal InjectDetDialogueComplete
 signal InjectObjective(content)
 signal ClearObjective
 signal InjectDetEmote(emote : EMOTE)
+signal AddJournalEntry(content)
 
 
 signal Mission1EnableCase
