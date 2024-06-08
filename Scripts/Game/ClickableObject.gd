@@ -10,7 +10,7 @@ var bIsEnabled = true
 
 func IsMouseClicked(mouse_pos: Vector2) -> bool:
 	var shape = CollisionShape.shape
-	var extents = shape.extents
+	var extents = shape.extents * scale
 	var top_left = CollisionShape.global_position - extents
 	var bottom_right = CollisionShape.global_position + extents
 
