@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://b82bxvwiipqyk"]
+[gd_scene load_steps=12 format=3 uid="uid://b82bxvwiipqyk"]
 
 [ext_resource type="Script" path="res://Scripts/UI/PlayerUI.gd" id="1_aif20"]
 [ext_resource type="Texture2D" uid="uid://dwpyojfn0u62a" path="res://Art/DetFloatsworth.svg" id="1_jqmt1"]
@@ -7,6 +7,21 @@
 [ext_resource type="Texture2D" uid="uid://y5exiahcqx3d" path="res://Art/TextPip.svg" id="4_p8xya"]
 [ext_resource type="PackedScene" uid="uid://duiiqyqvey730" path="res://Prefabs/UI/BoundaryHint.tscn" id="5_p065d"]
 [ext_resource type="PackedScene" uid="uid://c4u54p2854lyr" path="res://Prefabs/UI/PauseMenu.tscn" id="6_f5lj1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_70y8q"]
+bg_color = Color(0, 0, 0, 0.909804)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+shadow_color = Color(0, 0.878431, 0.796078, 1)
+shadow_size = 6
 
 [sub_resource type="Animation" id="Animation_wytmw"]
 length = 0.001
@@ -72,10 +87,11 @@ anchor_bottom = 0.5
 offset_left = -400.0
 offset_top = -452.0
 offset_right = 400.0
-offset_bottom = -352.0
+offset_bottom = -333.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(400, 50)
+theme_override_styles/panel = SubResource("StyleBoxFlat_70y8q")
 metadata/_edit_group_ = true
 
 [node name="Label" type="Label" parent="Objective"]
@@ -85,16 +101,17 @@ anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -800.0
-offset_top = -50.0
-offset_right = -5.0
-offset_bottom = 91.0
+offset_left = -797.0
+offset_top = -53.5
+offset_right = -2.0
+offset_bottom = 53.5
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 35
 text = "Go to Detectives House
 asdada"
 horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="BlackoutPanel" type="Panel" parent="."]
