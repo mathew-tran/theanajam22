@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=35 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -33,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://d3852jnmcyiav" path="res://Prefabs/Environment/PizzaShop.tscn" id="26_psy55"]
 [ext_resource type="PackedScene" uid="uid://ibcfnnrv6yq" path="res://Prefabs/Environment/PhoneBooth.tscn" id="27_f6ge6"]
 [ext_resource type="PackedScene" uid="uid://uh50u3l5p5kf" path="res://Prefabs/Environment/Rosemary.tscn" id="30_xtdot"]
+[ext_resource type="PackedScene" uid="uid://ddv5qk4ug341j" path="res://Prefabs/Environment/Rail.tscn" id="31_e373q"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -143,10 +144,10 @@ position = Vector2(488, 832)
 position = Vector2(808, 968)
 
 [node name="TreeType31" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(1040, 720)
+position = Vector2(1104, 776)
 
 [node name="TreeType47" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(712, 680)
+position = Vector2(760, 776)
 
 [node name="TreeType48" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(152, 808)
@@ -155,10 +156,10 @@ position = Vector2(152, 808)
 position = Vector2(-344, 992)
 
 [node name="TreeType50" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(-480, 664)
+position = Vector2(-544, 808)
 
 [node name="TreeType51" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(-840, 800)
+position = Vector2(-880, 816)
 
 [node name="TreeType52" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(-592, 320)
@@ -200,7 +201,7 @@ position = Vector2(-792, -2712)
 position = Vector2(1328, 904)
 
 [node name="TreeType33" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(1672, 728)
+position = Vector2(1704, 776)
 
 [node name="TreeType34" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(1992, 912)
@@ -215,13 +216,13 @@ position = Vector2(2520, 904)
 position = Vector2(2816, 752)
 
 [node name="TreeType38" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(2584, 664)
+position = Vector2(2608, 760)
 
 [node name="TreeType39" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(3456, 880)
 
 [node name="TreeType40" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(3392, 704)
+position = Vector2(3352, 760)
 
 [node name="TreeType64" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(2432, -2128)
@@ -341,13 +342,13 @@ position = Vector2(3648, 736)
 position = Vector2(4088, 824)
 
 [node name="TreeType44" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(4352, 712)
+position = Vector2(4400, 776)
 
 [node name="TreeType45" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(4368, 984)
 
 [node name="TreeType46" parent="Environment" instance=ExtResource("3_u3w0x")]
-position = Vector2(3920, 720)
+position = Vector2(3896, 776)
 
 [node name="TreeType2" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(264, 368)
@@ -435,12 +436,9 @@ position = Vector2(3136, -120)
 rotation = 1.57079
 
 [node name="Road22" parent="Environment" instance=ExtResource("1_d763k")]
-position = Vector2(3136, 664)
+position = Vector2(3136, 399.996)
 rotation = 1.57079
-
-[node name="Road26" parent="Environment" instance=ExtResource("1_d763k")]
-position = Vector2(3136, 1448)
-rotation = 1.57079
+scale = Vector2(0.334164, 1)
 
 [node name="Road9" parent="Environment" instance=ExtResource("1_d763k")]
 position = Vector2(792, -1790)
@@ -576,7 +574,7 @@ position = Vector2(3904, -648)
 position = Vector2(1368, 728)
 
 [node name="Rock18" parent="Environment" instance=ExtResource("20_ywkt4")]
-position = Vector2(2128, 688)
+position = Vector2(2104, 704)
 
 [node name="Rock19" parent="Environment" instance=ExtResource("20_ywkt4")]
 position = Vector2(80, 296)
@@ -628,6 +626,87 @@ position = Vector2(1168, -1440)
 
 [node name="Rosemary" parent="Environment" instance=ExtResource("30_xtdot")]
 position = Vector2(3112, -2872)
+
+[node name="Rail" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(-1067, 617)
+
+[node name="Rail2" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(-848, 617)
+
+[node name="Rail3" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(-624, 617)
+
+[node name="Rail4" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(-405, 617)
+
+[node name="Rail5" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(-181, 617)
+
+[node name="Rail6" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(38, 617)
+
+[node name="Rail7" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(262, 617)
+
+[node name="Rail8" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(481, 617)
+
+[node name="Rail9" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(705, 617)
+
+[node name="Rail10" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(924, 617)
+
+[node name="Rail11" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(1148, 617)
+
+[node name="Rail12" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(1367, 617)
+
+[node name="Rail13" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(1591, 617)
+
+[node name="Rail14" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(1810, 617)
+
+[node name="Rail15" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(2034, 617)
+
+[node name="Rail16" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(2253, 617)
+
+[node name="Rail17" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(2477, 617)
+
+[node name="Rail18" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(2696, 617)
+
+[node name="Rail19" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(2920, 617)
+
+[node name="Rail20" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(3139, 617)
+
+[node name="Rail21" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(3363, 617)
+
+[node name="Rail22" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(3582, 617)
+
+[node name="Rail23" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(3806, 617)
+
+[node name="Rail24" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(4025, 617)
+
+[node name="Rail25" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(4248, 617)
+
+[node name="Rail26" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(4467, 617)
+
+[node name="Rail27" parent="Environment" instance=ExtResource("31_e373q")]
+position = Vector2(4691, 617)
 
 [node name="Player" type="Camera2D" parent="."]
 visible = false
