@@ -4,12 +4,12 @@ func ActivateMission():
 
 	EventManager.AddJournalEntry.emit("Going to assist Detective Floatsworth in Balloon City with an investigation today.")
 
-	var content1 = "Welcome fellow detective.\nI need some help on this case. \nCan you help me?"
+	var content1 = "Welcome fellow detective.\nI heard you had a KEEN eye for spotting things!\nI need some help on this case. \nCan you help me?"
 	EventManager.InjectDetDialogue.emit(content1)
-
 	await EventManager.InjectDetDialogueComplete
-	var content2 = "Great. I knew you would!\nCould you go to my office near the clock tower. I have left a case file on the ground!"
+	var content2 = "Great. I knew you would! Not like you had a choice haha!\nCould you go to my office near the clock tower. I have left a case file on the ground!"
 	EventManager.InjectDetDialogue.emit(content2)
+
 
 	EventManager.AddJournalEntry.emit("Met Detective Floatsworth, I need to pick up a case file on the ground near his office.\nHis professionalism terrifies me.")
 
@@ -62,11 +62,43 @@ func ActivateMission():
 	await  EventManager.Mission1ScissorsFound
 
 	EventManager.ClearObjective.emit()
-	var content6 = "Ah ha! A pair of scissors. Nice catch detective.\nI am sure there's a crafts shop in town. I think that'd be our next best bet."
+	var content6 = "Ah ha! A pair of scissors. Nice catch detective.\n There's a barber shop in town. I think that'd be our next best bet.\nDo you like my hair? He's been cutting it for years!"
 	EventManager.InjectDetDialogue.emit(content6)
 
 	await EventManager.InjectDetDialogueComplete
-	EventManager.InjectObjective.emit("Find the crafts shop")
-	EventManager.AddJournalEntry.emit("We found the supposed murder weapon nearby the clock tower. Not too far from the body. Going to search the crafts shop next.")
+	EventManager.InjectObjective.emit("Find the barber shop")
+	EventManager.AddJournalEntry.emit("We found the supposed murder weapon nearby the clock tower. Not too far from the body. Going to search the barber shop next.")
+
+	EventManager.Mission1EnableBarber.emit()
+	await EventManager.Mission1BarberTalkedTo
+
+	EventManager.ClearObjective.emit()
+	var content7 = "Don't worry. Let me do the talking. I know Bubbles. He's been doing my hair for years.\nThis should be quick...."
+	EventManager.InjectDetDialogue.emit(content7)
+	EventManager.InjectDetEmote.emit(EventManager.EMOTE.BLUSH)
+	await  EventManager.InjectDetDialogueComplete
+	EventManager.AddJournalEntry.emit("Detective Floatsworth talked to his favorite barber, Bubbles. Turns out a pair of scissors went missing. Bubbles noted he saw a mysterious man with a LARGE COAT.")
+
+	EventManager.InjectDetEmote.emit(EventManager.EMOTE.NEUTRAL)
+	var content8 = "....\n...\n...\nBubbles said there was a blue pair of scissors that went missing yesterday. He thought he misplaced it.\nHowever...\nHe did notice an odd character yesterday wearing a large coat.\nLet's go and find them!"
+	EventManager.InjectDetDialogue.emit(content8)
+	EventManager.AddJournalEntry.emit("On the lookout for a large coat. It could be anywhere.")
+
+	await  EventManager.InjectDetDialogueComplete
+	EventManager.InjectObjective.emit("Find someone with a large coat!")
+	EventManager.Mission1EnableLargeCoat.emit()
+
+	await EventManager.Mission1LargeCoatFound
+	EventManager.ClearObjective.emit()
+
+	var content9 = "Well we see a large coat here. Hrm. Maybe we should ask around. I am lost, good thing I have you helping me out!"
+	EventManager.InjectDetDialogue.emit(content9)
+	await EventManager.InjectDetDialogueComplete
+
+	EventManager.AddJournalEntry.emit("Dead end, going to go around and look for clues")
+
+	EventManager.InjectObjective.emit("Look around for clues")
+
+
 func DeactivateMission():
 	pass

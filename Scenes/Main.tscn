@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=33 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://bght7exy3yjyo" path="res://Prefabs/Environment/Rock1.tscn" id="17_t434j"]
 [ext_resource type="PackedScene" uid="uid://ce3i4ayoi8uvk" path="res://Prefabs/Game/MissionStatements.tscn" id="18_5jp5u"]
 [ext_resource type="PackedScene" uid="uid://tem7npw4qxip" path="res://Prefabs/Environment/Rock2.tscn" id="18_6jb8x"]
+[ext_resource type="PackedScene" uid="uid://cjv0q65jpyv3v" path="res://Prefabs/Environment/LargeCoat.tscn" id="18_kns88"]
 [ext_resource type="PackedScene" uid="uid://34c8d3k1ygjh" path="res://Prefabs/Environment/Rock3.tscn" id="19_u3e56"]
 [ext_resource type="PackedScene" uid="uid://jiugunlglwge" path="res://Prefabs/Environment/Rock4.tscn" id="20_ywkt4"]
 [ext_resource type="PackedScene" uid="uid://82pwc0cdcig7" path="res://Prefabs/Environment/CityBoard.tscn" id="21_s8jmy"]
@@ -98,6 +99,11 @@ position = Vector2(651, -374.5)
 
 [node name="HouseType11" parent="Environment" instance=ExtResource("2_u734m")]
 position = Vector2(491, -374.5)
+
+[node name="LargeCoat" parent="Environment" instance=ExtResource("18_kns88")]
+position = Vector2(280, 88)
+rotation = 0.872028
+scale = Vector2(0.240011, 0.232342)
 
 [node name="TreeType12" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(1472, 32)

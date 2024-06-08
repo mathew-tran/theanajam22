@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://dghbssc1jvdf7"]
+[gd_scene load_steps=4 format=3 uid="uid://dghbssc1jvdf7"]
 
 [ext_resource type="Texture2D" uid="uid://d2u5nugk6tgj5" path="res://Art/Barbershop.svg" id="1_s1ca1"]
+[ext_resource type="Script" path="res://Scripts/Game/MissionBarbershop.gd" id="2_wbiv4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_flc0u"]
+size = Vector2(176, 120)
 
 [node name="Barbershop" type="Sprite2D"]
 texture = ExtResource("1_s1ca1")
+script = ExtResource("2_wbiv4")
+DefaultContent = "This is the only barber shop in town! Ah, good times.
+Bubbles the barber here has had 0 fatalities since it opened!
+Same can't be said for other cities. Count us lucky!"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_flc0u")

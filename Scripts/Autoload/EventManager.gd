@@ -29,6 +29,12 @@ signal Mission1DeadFriendFound
 signal Mission1EnableScissors
 signal Mission1ScissorsFound
 
+signal Mission1EnableBarber
+signal Mission1BarberTalkedTo
+
+signal Mission1EnableLargeCoat
+signal Mission1LargeCoatFound
+
 var bIsInDialogue = false
 var bIsInPauseMenu = false
 
