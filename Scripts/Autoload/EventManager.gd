@@ -35,6 +35,9 @@ signal Mission1BarberTalkedTo
 signal Mission1EnableLargeCoat
 signal Mission1LargeCoatFound
 
+signal Mission1EnableRosemary
+signal Mission1RosemaryTalkedTo
+
 var bIsInDialogue = false
 var bIsInPauseMenu = false
 

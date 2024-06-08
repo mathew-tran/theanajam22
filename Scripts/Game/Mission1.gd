@@ -99,6 +99,18 @@ func ActivateMission():
 
 	EventManager.InjectObjective.emit("Talk to balloons outside")
 
+	EventManager.Mission1EnableRosemary.emit()
+
+	await EventManager.Mission1RosemaryTalkedTo
+	EventManager.ClearObjective.emit()
+	var content10 = "I'll chat to her.\n...\n...\n...\nHer name is Rosemary, she turned out to be Benny's partner.\n...\nTurns out he lived near the hospital.. Let's check it out.\n"
+	EventManager.InjectDetDialogue.emit(content10)
+
+	await EventManager.InjectDetDialogueComplete
+	EventManager.InjectObjective.emit("Look for Benny's place")
+	EventManager.AddJournalEntry.emit("We found Benny's partner, Rosemary. Now we are looking for where Benny lived.")
+
+
 
 func DeactivateMission():
 	pass

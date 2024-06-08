@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://uh50u3l5p5kf"]
+
+[ext_resource type="Texture2D" uid="uid://dg2rh0o2040xm" path="res://Art/Rosemary.svg" id="1_eiofm"]
+[ext_resource type="Script" path="res://Scripts/Game/MissionRosemary.gd" id="2_dri7p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o101j"]
+size = Vector2(334.509, 425.739)
+
+[node name="Rosemary" type="Sprite2D"]
+scale = Vector2(0.263072, 0.263072)
+texture = ExtResource("1_eiofm")
+script = ExtResource("2_dri7p")
+DefaultContent = "....
+She seems unresponsive. 
+Maybe we can chat with her later.
+Let's go."
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-15.205, 1.45006e-05)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_o101j")

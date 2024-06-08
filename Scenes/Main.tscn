@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=34 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -32,6 +32,7 @@
 [ext_resource type="PackedScene" uid="uid://bque3377aydc4" path="res://Prefabs/Environment/FastfoodShop.tscn" id="25_r6dqe"]
 [ext_resource type="PackedScene" uid="uid://d3852jnmcyiav" path="res://Prefabs/Environment/PizzaShop.tscn" id="26_psy55"]
 [ext_resource type="PackedScene" uid="uid://ibcfnnrv6yq" path="res://Prefabs/Environment/PhoneBooth.tscn" id="27_f6ge6"]
+[ext_resource type="PackedScene" uid="uid://uh50u3l5p5kf" path="res://Prefabs/Environment/Rosemary.tscn" id="30_xtdot"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -624,6 +625,9 @@ position = Vector2(2512, -1128)
 
 [node name="PhoneBooth3" parent="Environment" instance=ExtResource("27_f6ge6")]
 position = Vector2(1168, -1440)
+
+[node name="Rosemary" parent="Environment" instance=ExtResource("30_xtdot")]
+position = Vector2(3112, -2872)
 
 [node name="Player" type="Camera2D" parent="."]
 visible = false
