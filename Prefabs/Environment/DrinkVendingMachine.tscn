@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://b88eyax2ah30"]
+[gd_scene load_steps=4 format=3 uid="uid://b88eyax2ah30"]
 
 [ext_resource type="Texture2D" uid="uid://dd2ecqd3e0nrc" path="res://Art/DrinkVendingMachines.svg" id="1_vl2y5"]
+[ext_resource type="Script" path="res://Scripts/Game/ClickableObject.gd" id="2_gxhbd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ajoyo"]
+size = Vector2(32, 64)
 
 [node name="DrinkVendingMachine" type="Sprite2D"]
+position = Vector2(0, 8)
 texture = ExtResource("1_vl2y5")
+script = ExtResource("2_gxhbd")
+DefaultContent = "Sells cool fizzy drinks.
+Great on a hot Summer's day!"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ajoyo")

@@ -27,7 +27,7 @@ func _ready():
 	EventManager.connect("ClearObjective", Callable(self, "OnClearObjective"))
 	EventManager.connect("InjectDetEmote", Callable(self, "OnInjectDetEmote"))
 	ClearText()
-	ClearObjective()
+	ClearObjective(false)
 
 func OnPlayerHitTopBoundary():
 	$TopBoundaryHint.ActivateHint()
@@ -105,8 +105,14 @@ func SetObjectiveLabel(content):
 	ObjectivePanel.visible = true
 	ObjectiveLabel.text = content
 
-func ClearObjective():
-	ObjectivePanel.visible = false
+func ClearObjective(bTween = true):
+
+	if bTween:
+		var tween = get_tree().create_tween()
+		tween.tween_property(ObjectivePanel, "position:y", -20, .1)
+		tween.tween_property(ObjectivePanel, "scale", Vector2.ZERO, .2)
+	else:
+		ObjectivePanel.scale = Vector2.ZERO
 
 func OnInjectDetDialogue(content):
 	SpeechLabel.text = ""

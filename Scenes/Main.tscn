@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=39 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -13,7 +13,6 @@
 [ext_resource type="PackedScene" uid="uid://b06c8tfcedv56" path="res://Prefabs/Environment/Friend.tscn" id="9_15cmk"]
 [ext_resource type="PackedScene" uid="uid://0rbuo4cafmta" path="res://Prefabs/Environment/FloatsworthHouse.tscn" id="10_4emtf"]
 [ext_resource type="PackedScene" uid="uid://dyujepwgvdd77" path="res://Prefabs/Environment/CaseFile.tscn" id="11_x216x"]
-[ext_resource type="PackedScene" uid="uid://ckyo8f268x01x" path="res://Prefabs/Environment/FriendsHouse.tscn" id="12_g2pq3"]
 [ext_resource type="PackedScene" uid="uid://b6vv38hwl3eex" path="res://Prefabs/Environment/FriendsNote.tscn" id="13_jb8o8"]
 [ext_resource type="PackedScene" uid="uid://c4dj6j2f40cmo" path="res://Prefabs/Environment/DeadFriend.tscn" id="14_0tdpu"]
 [ext_resource type="PackedScene" uid="uid://b88eyax2ah30" path="res://Prefabs/Environment/DrinkVendingMachine.tscn" id="15_7ix5h"]
@@ -508,11 +507,8 @@ position = Vector2(1432, -1560)
 [node name="Casefile" parent="Environment" instance=ExtResource("11_x216x")]
 position = Vector2(1360, -1384)
 
-[node name="FriendsHouse" parent="Environment" instance=ExtResource("12_g2pq3")]
-position = Vector2(510.5, -1108.5)
-
 [node name="FriendNote" parent="Environment" instance=ExtResource("13_jb8o8")]
-position = Vector2(614.5, -1012.5)
+position = Vector2(416, -664)
 scale = Vector2(0.271429, 0.241935)
 
 [node name="DeadFriend" parent="Environment" instance=ExtResource("14_0tdpu")]

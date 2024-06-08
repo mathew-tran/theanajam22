@@ -149,6 +149,7 @@ func ActivateMission():
 
 	await EventManager.InjectDetDialogueComplete
 	EventManager.InjectObjective.emit("Mission completed. Thanks for playing!")
+	EventManager.AddJournalEntry.emit("Found the killer in the black railcar. My work has been done for the day")
 
 func DeactivateMission():
 	pass

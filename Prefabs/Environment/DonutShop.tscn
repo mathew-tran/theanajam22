@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5hdyt5q8cmlt"]
+[gd_scene load_steps=4 format=3 uid="uid://c5hdyt5q8cmlt"]
 
 [ext_resource type="Texture2D" uid="uid://b5i5us0n8f2bq" path="res://Art/DonutShop.svg" id="1_pnnvy"]
+[ext_resource type="Script" path="res://Scripts/Game/ClickableObject.gd" id="2_jw5qg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b67hn"]
+size = Vector2(176, 120)
 
 [node name="DonutShop" type="Sprite2D"]
 texture = ExtResource("1_pnnvy")
+script = ExtResource("2_jw5qg")
+DefaultContent = "Nothing like a old fashioned donut and a black coffee.
+The cashier here sometimes drops off the left over donuts at my place after work.
+I think I am starting to gain weight. But I can't say no to donuts!"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_b67hn")

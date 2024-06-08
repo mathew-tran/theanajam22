@@ -10,7 +10,7 @@ size = Vector2(32, 68)
 texture = ExtResource("1_4vwf1")
 script = ExtResource("2_op4cx")
 DefaultContent = "A Phone booth.
-"
+These are defunct now. But the city has yet to remove them."
 
 [node name="Area2D" type="Area2D" parent="."]
 

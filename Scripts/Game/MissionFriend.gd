@@ -3,6 +3,7 @@ extends ClickableObject
 func _ready():
 	EventManager.connect("Mission1EnableRosemary", Callable(self, "OnMission1EnableRosemary"))
 	EventManager.connect("Mission1RosemaryTalkedTo", Callable(self, "OnMission1RosemaryTalkedTo"))
+	EventManager.connect("Mission1KillerFound", Callable(self,"OnMission1KillerFound"))
 	bIsEnabled = false
 
 func OnMission1EnableRosemary():
@@ -10,6 +11,10 @@ func OnMission1EnableRosemary():
 
 func OnMission1RosemaryTalkedTo():
 	bIsEnabled = false
+
+func OnMission1KillerFound():
+	bIsEnabled = false
+	DefaultContent = "He said thanks to us on finding the killer"
 
 func SuccessfulMouseClick():
 	if bIsEnabled:

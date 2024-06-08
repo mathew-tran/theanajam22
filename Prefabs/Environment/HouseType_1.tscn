@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bvy7aud5igsos"]
+[gd_scene load_steps=4 format=3 uid="uid://bvy7aud5igsos"]
 
 [ext_resource type="Texture2D" uid="uid://uxwqe0xc7oc3" path="res://Art/house1.svg" id="1_ssj42"]
+[ext_resource type="Script" path="res://Scripts/Game/ClickableObject.gd" id="2_udmf7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gi7rn"]
+size = Vector2(112, 200)
 
 [node name="HouseType1" type="Sprite2D"]
 texture = ExtResource("1_ssj42")
+script = ExtResource("2_udmf7")
+DefaultContent = "Everyone's been moving to these new houses. Very fancy. Very modern.
+I heard they have built in air conditioning!"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_gi7rn")
