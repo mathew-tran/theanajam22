@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0ov5hncc17f8"]
+
+[ext_resource type="Texture2D" uid="uid://ccnrwinenjfov" path="res://Art/Cart2.svg" id="1_347j3"]
+[ext_resource type="Script" path="res://Scripts/Game/MissionCart.gd" id="2_6iq6s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_parr4"]
+size = Vector2(304, 104)
+
+[node name="Cart" type="Sprite2D"]
+texture = ExtResource("1_347j3")
+script = ExtResource("2_6iq6s")
+DefaultContent = "A railcar. It sometimes gets bit noisy when these things pass by.
+The train is stopped further down the tracks."
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(7.62939e-06, -12)
+shape = SubResource("RectangleShape2D_parr4")

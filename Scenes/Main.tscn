@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=40 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://tem7npw4qxip" path="res://Prefabs/Environment/Rock2.tscn" id="18_6jb8x"]
 [ext_resource type="PackedScene" uid="uid://cjv0q65jpyv3v" path="res://Prefabs/Environment/LargeCoat.tscn" id="18_kns88"]
 [ext_resource type="PackedScene" uid="uid://34c8d3k1ygjh" path="res://Prefabs/Environment/Rock3.tscn" id="19_u3e56"]
+[ext_resource type="PackedScene" uid="uid://daw6sp0aivq3x" path="res://Prefabs/Environment/Clementine.tscn" id="19_wec57"]
 [ext_resource type="PackedScene" uid="uid://jiugunlglwge" path="res://Prefabs/Environment/Rock4.tscn" id="20_ywkt4"]
 [ext_resource type="PackedScene" uid="uid://82pwc0cdcig7" path="res://Prefabs/Environment/CityBoard.tscn" id="21_s8jmy"]
 [ext_resource type="PackedScene" uid="uid://dghbssc1jvdf7" path="res://Prefabs/Environment/BarberShop.tscn" id="22_jaxfr"]
@@ -34,6 +35,10 @@
 [ext_resource type="PackedScene" uid="uid://uh50u3l5p5kf" path="res://Prefabs/Environment/Rosemary.tscn" id="30_xtdot"]
 [ext_resource type="PackedScene" uid="uid://ddv5qk4ug341j" path="res://Prefabs/Environment/Rail.tscn" id="31_e373q"]
 [ext_resource type="PackedScene" uid="uid://up3lb441hpn4" path="res://Prefabs/Game/Player.tscn" id="32_f787s"]
+[ext_resource type="PackedScene" uid="uid://q6cfe6ohywj6" path="res://Prefabs/Environment/Cart1.tscn" id="33_68s1d"]
+[ext_resource type="PackedScene" uid="uid://d0ov5hncc17f8" path="res://Prefabs/Environment/Cart2.tscn" id="34_y27ym"]
+[ext_resource type="PackedScene" uid="uid://ck42kq7143fm7" path="res://Prefabs/Environment/Cart3.tscn" id="35_mgbye"]
+[ext_resource type="PackedScene" uid="uid://baayqlxwlhep7" path="res://Prefabs/Environment/Cart4.tscn" id="36_4igq6"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -494,7 +499,7 @@ position = Vector2(2176, 176)
 position = Vector2(2192, -408)
 
 [node name="Friend" parent="Environment" instance=ExtResource("9_15cmk")]
-position = Vector2(360, -1048)
+position = Vector2(1840, -376)
 scale = Vector2(0.297468, 0.297468)
 
 [node name="FloatsworthHouse" parent="Environment" instance=ExtResource("10_4emtf")]
@@ -524,6 +529,9 @@ position = Vector2(1120, -1008)
 position = Vector2(1080, -1008)
 
 [node name="Pond" parent="Environment" instance=ExtResource("16_e00e2")]
+
+[node name="Clementine" parent="Environment" instance=ExtResource("19_wec57")]
+position = Vector2(3656, -576)
 
 [node name="Rock1" parent="Environment" instance=ExtResource("17_t434j")]
 position = Vector2(1824, -1000)
@@ -707,6 +715,27 @@ position = Vector2(4467, 617)
 
 [node name="Rail27" parent="Environment" instance=ExtResource("31_e373q")]
 position = Vector2(4691, 617)
+
+[node name="Cart" parent="Environment" instance=ExtResource("33_68s1d")]
+position = Vector2(3114, 584)
+
+[node name="Cart2" parent="Environment" instance=ExtResource("34_y27ym")]
+position = Vector2(3442, 584)
+
+[node name="Cart7" parent="Environment" instance=ExtResource("34_y27ym")]
+position = Vector2(3760, 584)
+
+[node name="Cart6" parent="Environment" instance=ExtResource("34_y27ym")]
+position = Vector2(2461, 584)
+
+[node name="Cart3" parent="Environment" instance=ExtResource("35_mgbye")]
+position = Vector2(2136, 584)
+
+[node name="Cart4" parent="Environment" instance=ExtResource("36_4igq6")]
+position = Vector2(4090, 584)
+
+[node name="Cart5" parent="Environment" instance=ExtResource("36_4igq6")]
+position = Vector2(2792, 584)
 
 [node name="Player" parent="." instance=ExtResource("32_f787s")]
 

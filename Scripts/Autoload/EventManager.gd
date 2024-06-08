@@ -38,6 +38,18 @@ signal Mission1LargeCoatFound
 signal Mission1EnableRosemary
 signal Mission1RosemaryTalkedTo
 
+signal Mission1EnableReceipt
+signal Mission1ReceiptFound
+
+signal Mission1EnableJewelleryStore
+signal Mission1WentToJewelleryStore
+
+signal Mission1EnableClementine
+signal Mission1CelementineTalkedTo
+
+signal Mission1EnableFindKiller
+signal Mission1KillerFound
+
 var bIsInDialogue = false
 var bIsInPauseMenu = false
 

@@ -109,8 +109,46 @@ func ActivateMission():
 	await EventManager.InjectDetDialogueComplete
 	EventManager.InjectObjective.emit("Look for Benny's place")
 	EventManager.AddJournalEntry.emit("We found Benny's partner, Rosemary. Now we are looking for where Benny lived.")
+	EventManager.Mission1EnableReceipt.emit()
 
+	await EventManager.Mission1ReceiptFound
+	EventManager.ClearObjective.emit()
+	EventManager.InjectDetDialogue.emit("A receipt to buy a diamond ring it seems.\nBenny must've had something special planned for Rosemary before the incident.\n...\nLet's check the jewellery store.")
+	EventManager.AddJournalEntry.emit("We found a receipt near Benny's place. It looked like he was planning to propose on the next meet with Rosemary")
 
+	await EventManager.InjectDetDialogueComplete
+
+	EventManager.InjectObjective.emit("Look for jewellery store")
+	EventManager.Mission1EnableJewelleryStore.emit()
+
+	await EventManager.Mission1WentToJewelleryStore
+	EventManager.ClearObjective.emit()
+	var content11 = "...\n...\nThe owner here says that Benny was here a couple weeks ago\nBut before he bought the ring he seemed to have a fight with a balloon with a large coat\n..\nBack to the balloon with a large coat again.\nLet's look around for clues"
+	EventManager.InjectDetDialogue.emit(content11)
+	EventManager.AddJournalEntry.emit("We talked to the owner of the jewelery store. Benny had a fight with someone in a large coat. Detective Floatsworth seems lost and now we are looking around for clues")
+
+	await EventManager.InjectDetDialogueComplete
+	EventManager.InjectObjective.emit("Look around for clues")
+	EventManager.Mission1EnableClementine.emit()
+
+	await EventManager.Mission1CelementineTalkedTo
+	EventManager.ClearObjective.emit()
+	EventManager.AddJournalEntry.emit("There was a balloon behind a rock who told us what happened. Her name is Clementine. Benny was on the way to propose to Rosemary last night. But then he got stopped by the killer wearing a large coat.")
+
+	var content12 = "...\n...\nHer name is Clementine. She saw everything.\nLast night she saw get Benny murdered by someone in a large coat with the scissors.\nShe thinks he's hiding in one of the railcars"
+	EventManager.InjectDetDialogue.emit(content12)
+
+	await EventManager.InjectDetDialogueComplete
+	EventManager.InjectObjective.emit("Look for the killer")
+	EventManager.Mission1EnableFindKiller.emit()
+
+	await EventManager.Mission1KillerFound
+	EventManager.ClearObjective.emit()
+	var content13 = "..\nGot you!\n...\n...\n...\nWe got the killer.\nNice work detective! Couldn't have done it without you!"
+	EventManager.InjectDetDialogue.emit(content13)
+
+	await EventManager.InjectDetDialogueComplete
+	EventManager.InjectObjective.emit("Mission completed. Thanks for playing!")
 
 func DeactivateMission():
 	pass
