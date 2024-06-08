@@ -107,8 +107,8 @@ func ActivateMission():
 	EventManager.InjectDetDialogue.emit(content10)
 
 	await EventManager.InjectDetDialogueComplete
-	EventManager.InjectObjective.emit("Look for Benny's place")
-	EventManager.AddJournalEntry.emit("We found Benny's partner, Rosemary. Now we are looking for where Benny lived.")
+	EventManager.InjectObjective.emit("Look for clues around Benny's place")
+	EventManager.AddJournalEntry.emit("We found Benny's partner, Rosemary. Now we are looking for where Benny lived. He lived near the hospital")
 	EventManager.Mission1EnableReceipt.emit()
 
 	await EventManager.Mission1ReceiptFound
