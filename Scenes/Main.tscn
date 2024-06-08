@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://bvy7aud5igsos" path="res://Prefabs/Environment/HouseType_1.tscn" id="2_u734m"]
 [ext_resource type="PackedScene" uid="uid://r0tnq037xl5" path="res://Prefabs/Environment/TreeType_1.tscn" id="3_u3w0x"]
 [ext_resource type="PackedScene" uid="uid://1ju17a0hplj2" path="res://Prefabs/Environment/KillWeapon.tscn" id="4_jceq0"]
-[ext_resource type="Script" path="res://Scripts/Game/PlayerController.gd" id="4_nh21q"]
 [ext_resource type="PackedScene" uid="uid://db414rn1kbw8" path="res://Prefabs/Environment/FenceType1.tscn" id="4_rypjo"]
 [ext_resource type="PackedScene" uid="uid://c5hdyt5q8cmlt" path="res://Prefabs/Environment/DonutShop.tscn" id="5_bi2js"]
 [ext_resource type="PackedScene" uid="uid://b1085mflhxfsi" path="res://Prefabs/Environment/WaterFountain.tscn" id="6_hkplv"]
@@ -34,6 +33,7 @@
 [ext_resource type="PackedScene" uid="uid://ibcfnnrv6yq" path="res://Prefabs/Environment/PhoneBooth.tscn" id="27_f6ge6"]
 [ext_resource type="PackedScene" uid="uid://uh50u3l5p5kf" path="res://Prefabs/Environment/Rosemary.tscn" id="30_xtdot"]
 [ext_resource type="PackedScene" uid="uid://ddv5qk4ug341j" path="res://Prefabs/Environment/Rail.tscn" id="31_e373q"]
+[ext_resource type="PackedScene" uid="uid://up3lb441hpn4" path="res://Prefabs/Game/Player.tscn" id="32_f787s"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -708,11 +708,7 @@ position = Vector2(4467, 617)
 [node name="Rail27" parent="Environment" instance=ExtResource("31_e373q")]
 position = Vector2(4691, 617)
 
-[node name="Player" type="Camera2D" parent="."]
-visible = false
-position = Vector2(0, 376)
-position_smoothing_enabled = true
-script = ExtResource("4_nh21q")
+[node name="Player" parent="." instance=ExtResource("32_f787s")]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
