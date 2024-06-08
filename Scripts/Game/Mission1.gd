@@ -95,9 +95,9 @@ func ActivateMission():
 	EventManager.InjectDetDialogue.emit(content9)
 	await EventManager.InjectDetDialogueComplete
 
-	EventManager.AddJournalEntry.emit("Dead end, going to go around and look for clues")
+	EventManager.AddJournalEntry.emit("Dead end, going to talk around and look for clues")
 
-	EventManager.InjectObjective.emit("Look around for clues")
+	EventManager.InjectObjective.emit("Talk to balloons outside")
 
 
 func DeactivateMission():
