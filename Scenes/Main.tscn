@@ -1,9 +1,10 @@
-[gd_scene load_steps=31 format=3 uid="uid://bgysluonl54m7"]
+[gd_scene load_steps=32 format=3 uid="uid://bgysluonl54m7"]
 
 [ext_resource type="PackedScene" uid="uid://bbwx0d7qscbco" path="res://Prefabs/Environment/Road.tscn" id="1_d763k"]
 [ext_resource type="PackedScene" uid="uid://b82bxvwiipqyk" path="res://Prefabs/UI/PlayerUI.tscn" id="1_tryda"]
 [ext_resource type="PackedScene" uid="uid://bvy7aud5igsos" path="res://Prefabs/Environment/HouseType_1.tscn" id="2_u734m"]
 [ext_resource type="PackedScene" uid="uid://r0tnq037xl5" path="res://Prefabs/Environment/TreeType_1.tscn" id="3_u3w0x"]
+[ext_resource type="PackedScene" uid="uid://1ju17a0hplj2" path="res://Prefabs/Environment/KillWeapon.tscn" id="4_jceq0"]
 [ext_resource type="Script" path="res://Scripts/Game/PlayerController.gd" id="4_nh21q"]
 [ext_resource type="PackedScene" uid="uid://db414rn1kbw8" path="res://Prefabs/Environment/FenceType1.tscn" id="4_rypjo"]
 [ext_resource type="PackedScene" uid="uid://c5hdyt5q8cmlt" path="res://Prefabs/Environment/DonutShop.tscn" id="5_bi2js"]
@@ -295,6 +296,9 @@ position = Vector2(320, -3128)
 
 [node name="TreeType98" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(744, -3400)
+
+[node name="KillWeapon" parent="Environment" instance=ExtResource("4_jceq0")]
+position = Vector2(2713, 254)
 
 [node name="TreeType84" parent="Environment" instance=ExtResource("3_u3w0x")]
 position = Vector2(3656, -88)

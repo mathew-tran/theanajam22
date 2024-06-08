@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://1ju17a0hplj2"]
+
+[ext_resource type="Texture2D" uid="uid://dg7lpvy6tvpmj" path="res://Art/KillWeapon.svg" id="1_ld35r"]
+[ext_resource type="Script" path="res://Scripts/Game/MissionKillWeapon.gd" id="2_1hgrf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q517h"]
+size = Vector2(96, 61)
+
+[node name="KillWeapon" type="Sprite2D"]
+texture = ExtResource("1_ld35r")
+script = ExtResource("2_1hgrf")
+DefaultContent = ".. What's this pair of Scissors doing around here? Someone could get hurt!"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8, 1.5)
+shape = SubResource("RectangleShape2D_q517h")

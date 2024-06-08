@@ -46,9 +46,27 @@ func ActivateMission():
 	var content4 = "Oh.. I know this fellow. His name was Benny.\n.. Benny was always tying knots in his string. Said it helped him think, but he was always left all tangled up."
 	EventManager.InjectDetDialogue.emit(content4)
 
-	EventManager.AddJournalEntry.emit("Victim's name was Benny. Detective Floatsworth seems to have known him.")
-	EventManager.InjectDetDialogueComplete
+	EventManager.AddJournalEntry.emit("Victim's name was Benny. A tall, slim, green balloon with a large slash across his chest. Detective Floatsworth seems to have known him.")
+	await EventManager.InjectDetDialogueComplete
 
+	var content5 = ".. Well, let's look around. There's bound to be something around here. What a shame."
+	EventManager.InjectDetDialogue.emit(content5)
+	EventManager.InjectDetEmote.emit(EventManager.EMOTE.NEUTRAL)
+	await  EventManager.InjectDetDialogueComplete
 
+	EventManager.InjectObjective.emit("Look for clues around the body")
+	EventManager.AddJournalEntry.emit("Trying to look for clues. Maybe a tool or another balloon that tried to kill Benny.")
+
+	EventManager.Mission1EnableScissors.emit()
+
+	await  EventManager.Mission1ScissorsFound
+
+	EventManager.ClearObjective.emit()
+	var content6 = "Ah ha! A pair of scissors. Nice catch detective.\nI am sure there's a crafts shop in town. I think that'd be our next best bet."
+	EventManager.InjectDetDialogue.emit(content6)
+
+	await EventManager.InjectDetDialogueComplete
+	EventManager.InjectObjective.emit("Find the crafts shop")
+	EventManager.AddJournalEntry.emit("We found the supposed murder weapon nearby the clock tower. Not too far from the body. Going to search the crafts shop next.")
 func DeactivateMission():
 	pass

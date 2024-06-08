@@ -26,6 +26,9 @@ signal MissionCasePickup
 signal Mission1EnableDeadFriend
 signal Mission1DeadFriendFound
 
+signal Mission1EnableScissors
+signal Mission1ScissorsFound
+
 var bIsInDialogue = false
 var bIsInPauseMenu = false
 
